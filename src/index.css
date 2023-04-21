@@ -62,10 +62,10 @@
     }
 
     .architecture {
-        @apply text-[.87em]
+        @apply text-[.87em] sm:text-[.99em] md:text-[1.1em] lg:text-[1.3em]
     }
     .com {
-        @apply lowercase self-end text-[.7rem] mt-[-0.5rem]
+        @apply lowercase self-end text-[.7rem] sm:text-[.88em] md:text-[.99em] lg:text-[1.05em] mt-[-0.55rem]
     }
 
     .topsection-div {
@@ -93,10 +93,11 @@
     }
     
     .nav-link-comp-container {
-        @apply w-full md:w-[90%] capitalize md:flex items-center justify-between px-3 pt-1 pb-4 md:pb-1 overflow-y-scroll md:overflow-visible transition-all duration-300 md:transition-none
+        @apply w-full md:w-[90%] capitalize md:flex items-center justify-between px-3 pt-1 pb-4 md:pb-1 overflow-hidden md:overflow-visible transition-all duration-300 md:transition-none
     }
     .navLink-style {
-        @apply transition-all duration-300 grid grid-cols-2 md:grid-cols-4 gap-2 bg-black p-2 my-1 w-[95vw] md:hidden md:left-[5%] md:top-[63px]
+        @apply transition-all duration-300 grid grid-cols-2 md:grid-cols-4 gap-2 bg-black p-2 my-1 w-[95vw] 
+        /* md:left-[5%] md:top-[63px] */
     }
 
     header section h3 {
