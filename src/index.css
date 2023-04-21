@@ -42,7 +42,9 @@
     a {
         @apply hover:text-blue-300 transition-all duration-300
     }
-
+    
+    /* header */
+    
     .header-style {
         @apply w-full top-0 left-0 capitalize text-white text-[.92rem]
     }
@@ -83,15 +85,15 @@
     }
 
     .nav-section-div-style {
-        @apply w-full md:w-fit flex items-center justify-between text-[.84rem] text-white border
+        @apply w-full md:w-fit flex items-center justify-between text-[.84rem] text-white 
     }
     
     .nav-link-div-btn {
-        @apply w-full py-1 flex items-center justify-between
+        @apply w-full flex items-center justify-between
     }
     
     .nav-link-comp-container {
-        @apply w-full md:w-[90%] capitalize md:flex items-center justify-between px-3 pt-1 pb-4 md:pb-1 overflow-y-scroll md:overflow-visible transition-all duration-300 md:transition-none border
+        @apply w-full md:w-[90%] capitalize md:flex items-center justify-between px-3 pt-1 pb-4 md:pb-1 overflow-y-scroll md:overflow-visible transition-all duration-300 md:transition-none
     }
     .navLink-style {
         @apply transition-all duration-300 grid grid-cols-2 md:grid-cols-4 gap-2 bg-black p-2 my-1 w-[95vw] md:hidden md:left-[5%] md:top-[63px]
@@ -110,7 +112,7 @@
     }
 
     .cart-link-style {
-        @apply bg-orange-500 hover:bg-orange-600 p-[.7rem] flex items-center justify-center text-[.91rem]
+        @apply bg-orange-500 hover:bg-orange-600 p-[.6rem] flex items-center justify-center text-[.91rem]
     }
 
     /* 
