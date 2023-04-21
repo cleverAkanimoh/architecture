@@ -12,11 +12,15 @@ export default function Home() {
     <section className="general-flex">
       {/* <ImageArea src={defaultImage} title="title here..." /> */}
 
-      <Link to={'..'} className="hidden sm2:block">
+      <Link to={".."} className="hidden sm2:block">
         <div className="overflow-hidden">
-          <div className="w-full h-[50vw] relative items-center justify-center">
+          <div className="w-full h-[30vw] relative items-center justify-center">
           
-            <img src={defaultImage} alt={"title"} className="w-full h-full hover:scale-[1.1] transition-all duration-200" />
+            <img
+              src={defaultImage}
+              alt={"title"}
+              className="w-full h-full hover:scale-[1.1] transition-all duration-200"
+            />
 
             <div className="absolute rounded-l-full bottom-0 right-0 py-1 px-3 bg-gray-900 text-white font-sans">
               <p>{"Modern home plan - ID 24606"}</p>
