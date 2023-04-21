@@ -12,7 +12,7 @@ export default function TopSection() {
           </h4>
         </Link>
         
-        <div className="w-[160px] sm:w-[180px] flex justify-between">
+        <div className="w-[160px] sm:w-[180px] flex items-center justify-between">
           <div className="topsection-div">
             <a
               href=""
