@@ -1,12 +1,15 @@
 import BoxContainer from "../Components/home/BoxContainer"
+import ImageArea from "../Components/home/ImageArea"
 import WelcomeComp from "../Components/home/WelcomeComp"
 import useWindowTitle from "../hooks/useWindowTitle"
+import defaultImage from '../assets/images/clev_4.jpg'
 
 export default function Home() {
   useWindowTitle('Home | extra text goes here')
 
   return (
     <section className="general-flex">
+    <ImageArea src={defaultImage} title="title here..." />
 
       <WelcomeComp
         className="pt-2 pb-6"

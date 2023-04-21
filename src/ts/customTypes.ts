@@ -16,7 +16,7 @@ export type BoxContainerProps = {
 export type ImageAreaProps = {
     src: string
     title: string
-} 
+}  & React.ComponentProps<"div">
 
 export type WelcomeCompProps = {
     heading: string

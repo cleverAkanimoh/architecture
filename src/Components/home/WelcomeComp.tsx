@@ -1,5 +1,3 @@
-import { BsBagCheck } from 'react-icons/bs'
-import { VscHeart, VscHeartFilled, VscMenu, VscClose } from 'react-icons/vsc'
 import { WelcomeCompProps } from '../../ts/customTypes'
 
 const WelcomeComp = ({ heading, text, ...rest }: WelcomeCompProps) => (
