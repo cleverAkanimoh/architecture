@@ -48,17 +48,20 @@
     }
 
     .topsection {
-        @apply w-full md:py-2 md:px-[.85rem] bg-black flex justify-center items-center
+        @apply w-full md:py-1 md:px-[.85rem] bg-black flex justify-center items-center
     }
     
     .topsection-section {
-        @apply w-full max-w-[1150px] py-2 px-[.85rem] text-white flex justify-between items-center
+        @apply w-full max-w-[1150px] py-1 px-[.85rem] text-white flex justify-between items-center
     }
 
     .topsection-logo {
         @apply md:text-xl flex flex-col font-Montserrat font-bold text-blue-300
     }
 
+    .architecture {
+        @apply text-[.87em]
+    }
     .com {
         @apply lowercase self-end text-[.7rem] mt-[-0.5rem]
     }
