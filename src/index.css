@@ -54,7 +54,7 @@
     }
     
     .topsection-section {
-        @apply w-full max-w-[1150px] py-1 px-[.85rem] text-white flex justify-between items-center
+        @apply w-full py-1 px-[.85rem] text-white flex justify-between items-center
     }
 
     .topsection-logo {

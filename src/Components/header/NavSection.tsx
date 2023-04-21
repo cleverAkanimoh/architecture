@@ -17,11 +17,11 @@ export default function NavSection() {
 
   return (
     <div className="nav-section-div-style">
-      <button onClick={menuPressedFn} className="text-xl md:hidden">
+      <button onClick={menuPressedFn} className="text-xl text-gray-500 hover:text-white md:hidden">
         {isMenuPressed ? <VscClose /> : <VscMenu />}
       </button>
 
-      <div className="w-[289px] sm:w-[350px] md:w-[310px] flex items-center justify-between">
+      <div className="w-[285px] flex items-center justify-between">
         <div className="flex">
           <ul className="flex">
             <LiNavLinkComp
