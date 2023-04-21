@@ -1,5 +1,5 @@
 import BoxContainer from "../Components/home/BoxContainer";
-// import ImageArea from "../Components/home/ImageArea";
+import ImageArea from "../Components/home/ImageArea";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import useWindowTitle from "../hooks/useWindowTitle";
 import defaultImage from "../assets/images/defaultimage.jpg";
@@ -10,22 +10,9 @@ export default function Home() {
 
   return (
     <section className="general-flex">
-      {/* <ImageArea src={defaultImage} title="title here..." /> */}
-
       <Link to={".."} className="hidden sm2:block">
         <div className="overflow-hidden">
-          <div className="w-full h-[30vw] relative items-center justify-center">
-          
-            <img
-              src={defaultImage}
-              alt={"title"}
-              className="w-full h-full hover:scale-[1.1] transition-all duration-200"
-            />
-
-            <div className="absolute rounded-l-full bottom-0 right-0 py-1 px-3 bg-gray-900 text-white font-sans">
-              <p>{"Modern home plan - ID 24606"}</p>
-            </div>
-          </div>
+          <ImageArea src={defaultImage} title="Modern home plan - ID 24606" />
         </div>
       </Link>
 
@@ -53,6 +40,24 @@ export default function Home() {
           title="best customer support"
           desc="From 9 am to 4 pm GMT +03, Monday through Friday our dedicated support staff are available to assist you in finding the ideal plan for your home. If you'd like to inquire about customization options, please contact us. We'll be glad to help."
         />
+      </div>
+
+      <div className="w-full h-[230px] my-4 flex flex-col md:flex-row items-center text-left justify-center md:justify-between">
+        <aside className="h-[140px]">
+          <h1 className="text-[1.3rem]">new house plans</h1>
+          <p>
+            Curated monthly, these house plans represent current market trends
+          </p>
+        </aside>
+
+        <div className="w-fit flex self-end md:self-center">
+          <Link
+            to={"view all"}
+            className=" bg-blue-400 text-white rounded-r-full py-2 px-10"
+          >
+            View All
+          </Link>
+        </div>
       </div>
     </section>
   );

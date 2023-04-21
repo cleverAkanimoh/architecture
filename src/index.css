@@ -121,7 +121,7 @@
      */
 
     .general-flex {
-        @apply min-h-screen w-[90%] min-w-[300px] max-w-[1150px] flex flex-col items-center text-gray-400 text-center
+        @apply w-[80%] min-w-[300px] max-w-[1150px] flex flex-col items-center text-gray-400 text-center
     }
 
     /* Home Page */
