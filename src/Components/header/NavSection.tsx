@@ -21,7 +21,7 @@ export default function NavSection() {
         {isMenuPressed ? <VscClose /> : <VscMenu />}
       </button>
 
-      <div className="w-[289px] sm:w-[350px] md:w-[320px] flex items-center justify-between">
+      <div className="w-[289px] sm:w-[350px] md:w-[310px] flex items-center justify-between">
         <div className="flex">
           <ul className="flex">
             <LiNavLinkComp

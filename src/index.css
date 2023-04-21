@@ -79,16 +79,13 @@
     }
 
     .nav-style {
-        @apply w-full flex flex-col items-center justify-between md:flex-row-reverse bg-gray-semi bg-opacity-80 backdrop-blur-sm
+        @apply w-full px-1 flex flex-col items-center justify-between md:flex-row-reverse bg-gray-semi bg-opacity-80 backdrop-blur-sm border
     }
 
     .nav-section-div-style {
-        @apply w-full flex items-center justify-between shadow p-2 text-[.84rem] text-white 
+        @apply w-full md:w-fit flex items-center justify-between text-[.84rem] text-white border
     }
-
-    .nav-link-div {
-        @apply my-2
-    }
+    
     .nav-link-div-btn {
         @apply w-full py-1 flex items-center justify-between
     }
