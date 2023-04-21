@@ -3,6 +3,7 @@ import BoxContainer from "../Components/home/BoxContainer";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import useWindowTitle from "../hooks/useWindowTitle";
 import defaultImage from "../assets/images/defaultimage.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -11,16 +12,18 @@ export default function Home() {
     <section className="general-flex">
       {/* <ImageArea src={defaultImage} title="title here..." /> */}
 
-      <div className="w-full border-b border-b-black">
-        <div className="flex items-center justify-center bg-black py-2">
-          <img src={defaultImage} alt={'title'} className="w-12 mr-2" />
+      <Link to={'..'}>
+        <div className="w-full h-[20%]">
+          <div className="w-full  relative items-center justify-center">
+            <img src={defaultImage} alt={"title"} className="w-full" />
+
+            <div className="absolute rounded-l-full bottom-0 right-0 py-1 px-3 bg-gray-900 text-white font-light font-sans">
+              <p>{"Modern home plan - ID 24606"}</p>
+            </div>
+          </div>
         </div>
-        <div className="py-8 px-1 bg-gray-semi">
-          <p>{'title here'}</p>
-        </div>
-      </div>
-      
-      
+      </Link>
+
       <WelcomeComp
         className="pt-2 pb-6"
         heading="welcome to architecture.com"

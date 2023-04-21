@@ -46,7 +46,7 @@
     /* header */
     
     .header-style {
-        @apply w-full top-0 left-0 capitalize text-white text-[.92rem]
+        @apply w-full top-0 left-0 capitalize text-white text-[.92rem] z-50
     }
 
     .topsection {
