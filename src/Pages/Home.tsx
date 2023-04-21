@@ -1,16 +1,26 @@
-import BoxContainer from "../Components/home/BoxContainer"
-import ImageArea from "../Components/home/ImageArea"
-import WelcomeComp from "../Components/home/WelcomeComp"
-import useWindowTitle from "../hooks/useWindowTitle"
-import defaultImage from '../assets/images/clev_4.jpg'
+import BoxContainer from "../Components/home/BoxContainer";
+// import ImageArea from "../Components/home/ImageArea";
+import WelcomeComp from "../Components/home/WelcomeComp";
+import useWindowTitle from "../hooks/useWindowTitle";
+import defaultImage from "../assets/images/defaultimage.jpg";
 
 export default function Home() {
-  useWindowTitle('Home | extra text goes here')
+  useWindowTitle("Home | extra text goes here");
 
   return (
     <section className="general-flex">
-    <ImageArea src={defaultImage} title="title here..." />
+      {/* <ImageArea src={defaultImage} title="title here..." /> */}
 
+      <div className="w-full border-b border-b-black">
+        <div className="flex items-center justify-center bg-black py-2">
+          <img src={defaultImage} alt={'title'} className="w-12 mr-2" />
+        </div>
+        <div className="py-8 px-1 bg-gray-semi">
+          <p>{'title here'}</p>
+        </div>
+      </div>
+      
+      
       <WelcomeComp
         className="pt-2 pb-6"
         heading="welcome to architecture.com"
@@ -37,5 +47,5 @@ export default function Home() {
         />
       </div>
     </section>
-  )
+  );
 }
