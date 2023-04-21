@@ -79,7 +79,7 @@
     }
 
     .nav-style {
-        @apply w-full px-1 flex flex-col items-center justify-between md:flex-row-reverse bg-gray-semi bg-opacity-80 backdrop-blur-sm border
+        @apply w-full px-1 flex flex-col items-center justify-between md:flex-row-reverse bg-gray-semi bg-opacity-80 backdrop-blur-sm
     }
 
     .nav-section-div-style {
@@ -89,8 +89,9 @@
     .nav-link-div-btn {
         @apply w-full py-1 flex items-center justify-between
     }
+    
     .nav-link-comp-container {
-        @apply w-full capitalize md:flex items-center justify-between  p-3 pt-1 pb-4 md:pb-1 overflow-y-scroll md:overflow-visible transition-all duration-300 md:transition-none md:translate-y-[0%]
+        @apply w-full md:w-[90%] capitalize md:flex items-center justify-between px-3 pt-1 pb-4 md:pb-1 overflow-y-scroll md:overflow-visible transition-all duration-300 md:transition-none border
     }
     .navLink-style {
         @apply transition-all duration-300 grid grid-cols-2 md:grid-cols-4 gap-2 bg-black p-2 my-1 w-[95vw] md:hidden md:left-[5%] md:top-[63px]
