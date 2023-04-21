@@ -79,7 +79,7 @@
     }
 
     .nav-style {
-        @apply w-full flex flex-col items-center justify-between md:flex-row-reverse bg-gray-semi shadow
+        @apply w-full flex flex-col items-center justify-between md:flex-row-reverse bg-gray-semi bg-opacity-80 backdrop-blur-sm
     }
 
     .nav-section-div-style {
