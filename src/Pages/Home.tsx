@@ -10,11 +10,13 @@ export default function Home() {
 
   return (
     <section className="general-flex">
-      <Link to={".."} className="hidden sm2:block">
-        <div className="overflow-hidden">
-          <ImageArea src={defaultImage} title="Modern home plan - ID 24606" />
-        </div>
-      </Link>
+      <div>
+        <ImageArea
+          to=".."
+          src={defaultImage}
+          title="Modern home plan - ID 24606"
+        />
+      </div>
 
       <WelcomeComp
         className="pt-2 pb-6"
