@@ -5,6 +5,7 @@ import ImageArea from "../Components/home/ImageArea";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import useWindowTitle from "../hooks/useWindowTitle";
 import defaultImage from "../assets/images/defaultimage.jpg";
+import freeImage from "../assets/images/freeplan.jpg";
 import PlansComp from "../Components/home/PlansComp";
 
 export default function Home() {
@@ -64,6 +65,12 @@ export default function Home() {
         text="Explore our newest house plans added on a weekly basis"
         path="view trending"
       />
+      
+      <div>
+      <h1>Free Sample House Plan</h1>
+      <p>A free sample 4 bedroom house plan with a majestic entrance crowned with a 3.5 meter high decor. A covered porte-cochere ensures that you can drive all the way up to the entrance of the house without ever getting wet. Download this Sample House Plan to get an idea of how detailed plans look like.</p>
+      <img src={freeImage} alt="" />
+      </div>
     </section>
   );
 }
