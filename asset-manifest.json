@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/architecture-website/static/css/main.02ed888d.css",
-    "main.js": "/architecture-website/static/js/main.b0f7a554.js",
+    "main.js": "/architecture-website/static/js/main.0fad3e1c.js",
     "static/js/787.3c0238fc.chunk.js": "/architecture-website/static/js/787.3c0238fc.chunk.js",
     "static/media/defaultimage.jpg": "/architecture-website/static/media/defaultimage.06b71ecd7d6ba6ebd8a2.jpg",
     "index.html": "/architecture-website/index.html",
     "main.02ed888d.css.map": "/architecture-website/static/css/main.02ed888d.css.map",
-    "main.b0f7a554.js.map": "/architecture-website/static/js/main.b0f7a554.js.map",
+    "main.0fad3e1c.js.map": "/architecture-website/static/js/main.0fad3e1c.js.map",
     "787.3c0238fc.chunk.js.map": "/architecture-website/static/js/787.3c0238fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02ed888d.css",
-    "static/js/main.b0f7a554.js"
+    "static/js/main.0fad3e1c.js"
   ]
 }
