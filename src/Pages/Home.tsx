@@ -1,16 +1,20 @@
+import { Link } from "react-router-dom";
+import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
+
 import BoxContainer from "../Components/home/BoxContainer";
 import ImageArea from "../Components/home/ImageArea";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import useWindowTitle from "../hooks/useWindowTitle";
 import defaultImage from "../assets/images/defaultimage.jpg";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
 
   return (
     <section className="general-flex">
-      <div>
+      <div className="relative z-0">
+        <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold top-[50%] left-[0] rounded-r-full"><VscChevronLeft/></button>
+        <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold top-[50%] right-[0] rounded-l-full"><VscChevronRight/></button>
         <ImageArea
           to=".."
           src={defaultImage}
