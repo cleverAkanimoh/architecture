@@ -1,11 +1,13 @@
 import { BsMessenger, BsSearch, BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { VscHome } from "react-icons/vsc";
 
 export default function TopSection() {
   return (
     <div className="topsection">
       <section className="topsection-section">
-        <Link to={"architecture-website"}>
+        <Link to={"architecture-website"} className="flex items-center">
+        <VscHome className="text-[30px] sm:text-[50px] md:text-[70px] text-blue-500 mr-1" />
           <h4 className="topsection-logo">
             <span className="architecture">architecture</span>
             <span className="com">.com</span>
