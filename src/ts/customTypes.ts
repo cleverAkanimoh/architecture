@@ -23,3 +23,9 @@ export type WelcomeCompProps = {
   heading: string;
   text: string;
 } & React.ComponentProps<"div">;
+
+export type PlansCompProps = {
+  heading: string;
+  text: string;
+  path: string
+}

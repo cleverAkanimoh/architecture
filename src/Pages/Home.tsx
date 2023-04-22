@@ -49,23 +49,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="w-full h-[230px] my-4 flex flex-col md:flex-row items-center text-left justify-center md:justify-between">
-        <aside className="h-[140px]">
-          <h1 className="text-[1.3rem]">new house plans</h1>
-          <p>
-            Curated monthly, these house plans represent current market trends
-          </p>
-        </aside>
-
-        <div className="w-fit flex self-end md:self-center">
-          <Link
-            to={"view all"}
-            className=" bg-blue-400 text-white rounded-r-full py-2 px-10"
-          >
-            View All
-          </Link>
-        </div>
-      </div>
+      
     </section>
   );
 }
