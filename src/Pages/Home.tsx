@@ -6,6 +6,7 @@ import ImageArea from "../Components/home/ImageArea";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import useWindowTitle from "../hooks/useWindowTitle";
 import defaultImage from "../assets/images/defaultimage.jpg";
+import PlansComp from "../Components/home/PlansComp";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -13,9 +14,13 @@ export default function Home() {
   return (
     <section className="general-flex">
       <div className="relative z-0 hidden sm2:block">
-        <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold text-xl text-black transition-all top-[40%] left-[0] rounded-r-full"><VscChevronLeft/></button>
-        <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold text-xl text-black transition-all top-[40%] right-[0] rounded-l-full"><VscChevronRight/></button>
-        
+        <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold text-xl text-black transition-all top-[40%] left-[0] rounded-r-full">
+          <VscChevronLeft />
+        </button>
+        <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold text-xl text-black transition-all top-[40%] right-[0] rounded-l-full">
+          <VscChevronRight />
+        </button>
+
         <ImageArea
           to=".."
           src={defaultImage}
@@ -49,7 +54,17 @@ export default function Home() {
         />
       </div>
 
+      <PlansComp
+        heading="New House Plans"
+        text="Curated monthly, these house plans represent current market trends"
+        path="view new"
+      />
       
+      <PlansComp
+        heading="Trending House Plans"
+        text="Explore our newest house plans added on a weekly basis"
+        path="view trending"
+      />
     </section>
   );
 }
