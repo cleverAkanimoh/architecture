@@ -3,7 +3,7 @@ import { ImageAreaProps } from "../../ts/customTypes";
 
 const BoxContainer = ({ to, src, title, ...rest }: ImageAreaProps) => (
   <div {...rest} className="overflow-hidden">
-    <Link to={to} className="hidden sm2:block">
+    <Link to={to}>
       <div className="w-full h-[30vw] relative items-center justify-center">
         <img
           src={src}

@@ -96,8 +96,8 @@
         @apply w-full md:w-[90%] capitalize md:flex items-center justify-between px-3 pt-1 pb-4 md:pb-1 overflow-hidden md:overflow-visible transition-all duration-300 md:transition-none
     }
     .navLink-style {
-        @apply transition-all duration-300 grid grid-cols-2 md:grid-cols-4 gap-2 bg-black p-2 my-1 w-[95vw] 
-        /* md:left-[5%] md:top-[63px] */
+        @apply transition-all duration-300 grid grid-cols-2 md:grid-cols-4 gap-2 bg-black p-2 md:absolute my-1 w-[95vw] 
+        md:left-[5%] md:top-[33px] z-50 md:hidden md:group-hover:flex
     }
 
     header section h3 {

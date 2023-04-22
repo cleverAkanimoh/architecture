@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <section className="general-flex">
-      <div className="relative z-0">
+      <div className="relative z-0 hidden sm2:block">
         <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold text-xl text-black transition-all top-[40%] left-[0] rounded-r-full"><VscChevronLeft/></button>
         <button className="absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold text-xl text-black transition-all top-[40%] right-[0] rounded-l-full"><VscChevronRight/></button>
         

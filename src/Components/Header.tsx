@@ -1,13 +1,13 @@
-import { useSelector } from "react-redux";
-import useScrollFixedNav from "../hooks/useScrollFixedNav";
-import NavLinkComp from "./header/NavLinkComp";
-import NavSection from "./header/NavSection";
-import TopSection from "./header/TopSection";
+import { useSelector } from "react-redux"
+import useScrollFixedNav from "../hooks/useScrollFixedNav"
+import NavLinkComp from "./header/NavLinkComp"
+import NavSection from "./header/NavSection"
+import TopSection from "./header/TopSection"
 
 export default function Header() {
   const { isMenuPressed } = useSelector((state: any) => state.menu);
 
-  const navFixedState = useScrollFixedNav(50);
+  const navFixedState = useScrollFixedNav(50)
 
   return (
     <header className={`${navFixedState ? "fixed" : ""} header-style`}>
