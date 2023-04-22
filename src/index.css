@@ -86,11 +86,11 @@
     }
     
     .nav-substyle {
-        @apply w-full lg:w-[80%] xl:w-full flex flex-col items-center justify-between md:flex-row-reverse 
+        @apply w-full lg:w-[80%] xl:w-full flex flex-col items-center justify-between md:flex-row-reverse
     }
 
     .nav-section-div-style {
-        @apply w-full md:w-fit flex items-center justify-between text-[.84rem] text-white 
+        @apply w-full md:w-fit flex items-center justify-between text-[.84rem] text-white
     }
     
     .nav-link-div-btn {
@@ -135,11 +135,22 @@
     }
 
     .general-flex h1, .general-flex h2 {
-        @apply capitalize my-2 text-white text-lg
+        @apply capitalize my-2 text-white
     }
 
     .cardsContainer {
         @apply w-full flex flex-col md:flex-row gap-[.06rem]
     }
     
+    .btn-caro-style {
+        @apply absolute bg-white py-2 px-5 z-10 hover:bg-opacity-60 font-bold text-xl text-black transition-all top-[40%]
+    }
+    
+    .plansComp-style {
+        @apply w-full h-[180px] my-4 flex flex-col md:flex-row items-center text-left justify-center md:justify-between
+    }
+    
+    .aside-style {
+        @apply w-full max-w-[500px] h-[140px] flex flex-col justify-center
+    }
 }
