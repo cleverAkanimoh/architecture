@@ -1,4 +1,7 @@
-import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
+import {
+  VscChevronLeft,
+  VscChevronRight,
+} from "react-icons/vsc";
 
 import BoxContainer from "../Components/home/BoxContainer";
 import ImageArea from "../Components/home/ImageArea";
@@ -7,6 +10,7 @@ import useWindowTitle from "../hooks/useWindowTitle";
 import defaultImage from "../assets/images/defaultimage.jpg";
 import freeImage from "../assets/images/freeplan.jpg";
 import PlansComp from "../Components/home/PlansComp";
+import HomeList from "../Components/home/HomeList";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -59,17 +63,35 @@ export default function Home() {
         text="Curated monthly, these house plans represent current market trends"
         path="view new"
       />
-      
+
       <PlansComp
         heading="Trending House Plans"
         text="Explore our newest house plans added on a weekly basis"
         path="view trending"
       />
-      
+
       <div>
-      <h1>Free Sample House Plan</h1>
-      <p>A free sample 4 bedroom house plan with a majestic entrance crowned with a 3.5 meter high decor. A covered porte-cochere ensures that you can drive all the way up to the entrance of the house without ever getting wet. Download this Sample House Plan to get an idea of how detailed plans look like.</p>
-      <img src={freeImage} alt="" />
+        <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">Free Sample House Plan</h1>
+
+        <p>
+          A free sample 4 bedroom house plan with a majestic entrance crowned
+          with a 3.5 meter high decor. A covered porte-cochere ensures that you
+          can drive all the way up to the entrance of the house without ever
+          getting wet. Download this Sample House Plan to get an idea of how
+          detailed plans look like.
+        </p>
+
+        <div className="mt-5 pb-6 border-2 border-gray-dim text-left text-gray-light">
+          <picture>
+            <img src={freeImage} alt="free" />
+          </picture>
+
+          <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">
+            What You Get
+          </h1>
+
+          <HomeList text=" Floor plan, Roof plan" underline={true} />
+        </div>
       </div>
     </section>
   );

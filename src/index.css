@@ -43,6 +43,10 @@
         @apply hover:text-blue-400 transition-all duration-300
     }
     
+    p {
+        @apply text-[.8rem] sm:text-[1.1rem] w-full max-w-[800px]
+    }
+    
     /* header */
     
     .header-style {

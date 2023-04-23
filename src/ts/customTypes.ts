@@ -7,6 +7,11 @@ export type DropDownheadingProps = {
   text: string;
 };
 
+export type HomeListProps = {
+  text: string;
+  underline: boolean;
+};
+
 export type BoxContainerProps = {
   src: string;
   title: string;
@@ -27,5 +32,5 @@ export type WelcomeCompProps = {
 export type PlansCompProps = {
   heading: string;
   text: string;
-  path: string
-}
+  path: string;
+};
