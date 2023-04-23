@@ -47,6 +47,10 @@
         @apply text-[.8rem] sm:text-[1.1rem] w-full max-w-[800px]
     }
     
+    .h1 {
+        @apply w-full grid place-items-center h-16 text-xl sm:text-2xl md:text-3xl
+    }
+    
     /* header */
     
     .header-style {

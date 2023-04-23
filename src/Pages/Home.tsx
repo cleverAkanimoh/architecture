@@ -8,8 +8,7 @@ import defaultImage from "../assets/images/defaultimage.jpg";
 import freeImage from "../assets/images/freeplan.jpg";
 import PlansComp from "../Components/home/PlansComp";
 import HomeList from "../Components/home/HomeList";
-import { Carousel } from "react-responsive-carousel";
-import { Link } from "react-router-dom";
+import HomePlansComp from "../Components/home/HomePlansComp";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -70,7 +69,7 @@ export default function Home() {
       />
 
       <div className="mt-12">
-        <h1 className="w-full grid place-items-center font-bold h-16 text-xl sm:text-2xl md:text-3xl border-b-2 border-blue-400">
+        <h1 className="h1 border-b-2 border-blue-400">
           Free Sample House Plan
         </h1>
 
@@ -83,9 +82,9 @@ export default function Home() {
         </p>
 
         <div className="w-full mt-5 pb-6 text-left text-gray-light">
-          <div className="my-10">
-            <picture>
-              <img src={freeImage} alt="free" className="w-full max-h-[50vh]" />
+          <div className="my-10 md:flex justify-center">
+            <picture className="h-full flex-1 md:mr-4">
+              <img src={freeImage} alt="free" className="w-full h-full" />
             </picture>
 
             <div>
@@ -116,7 +115,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full flex flex-col items-center justify-center">
+          <div className="w-full flex flex-col items-center justify-center md:flex-row md:gap-2">
             <input
               type="text"
               className="downloadInput-style"
@@ -135,8 +134,62 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="w-full capitalize">
+        <h1 className="h1">Home Plan Collections</h1>
 
-      
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <HomePlansComp
+            path01=""
+            path02=""
+            path03=""
+            path04=""
+            path05=""
+            path06=""
+            path07=""
+            text01="small house plans"
+            text02="modern house plans"
+            text03="comtemporary house plans"
+            text04="hostel & lodges plans"
+            text05="apartment floor plans"
+            text06="traditional house plans"
+            text07="beach house floor plans"
+          />
+
+          <HomePlansComp
+            path01=""
+            path02=""
+            path03=""
+            path04=""
+            path05=""
+            path06=""
+            path07=""
+            text01="small house plans"
+            text02="modern house plans"
+            text03="comtemporary house plans"
+            text04="hostel & lodges plans"
+            text05="apartment floor plans"
+            text06="traditional house plans"
+            text07="beach house floor plans"
+          />
+
+          <HomePlansComp
+            path01=""
+            path02=""
+            path03=""
+            path04=""
+            path05=""
+            path06=""
+            path07=""
+            text01="small house plans"
+            text02="modern house plans"
+            text03="comtemporary house plans"
+            text04="hostel & lodges plans"
+            text05="apartment floor plans"
+            text06="traditional house plans"
+            text07="beach house floor plans"
+          />
+        </div>
+      </div>
     </section>
   );
 }
