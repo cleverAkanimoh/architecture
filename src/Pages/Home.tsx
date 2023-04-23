@@ -9,6 +9,7 @@ import freeImage from "../assets/images/freeplan.jpg";
 import PlansComp from "../Components/home/PlansComp";
 import HomeList from "../Components/home/HomeList";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -134,6 +135,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      
     </section>
   );
 }
