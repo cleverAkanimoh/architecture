@@ -1,7 +1,4 @@
-import {
-  VscChevronLeft,
-  VscChevronRight,
-} from "react-icons/vsc";
+import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
 import BoxContainer from "../Components/home/BoxContainer";
 import ImageArea from "../Components/home/ImageArea";
@@ -70,8 +67,10 @@ export default function Home() {
         path="view trending"
       />
 
-      <div>
-        <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">Free Sample House Plan</h1>
+      <div className="mt-12">
+        <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">
+          Free Sample House Plan
+        </h1>
 
         <p>
           A free sample 4 bedroom house plan with a majestic entrance crowned
@@ -81,9 +80,9 @@ export default function Home() {
           detailed plans look like.
         </p>
 
-        <div className="mt-5 pb-6 border-2 border-gray-dim text-left text-gray-light">
+        <div className="w-full mt-5 pb-6 border-2 border-gray-dim text-left text-gray-light">
           <picture>
-            <img src={freeImage} alt="free" />
+            <img src={freeImage} alt="free" className="w-full max-h-[50vh]" />
           </picture>
 
           <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">
