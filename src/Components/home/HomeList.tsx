@@ -5,9 +5,9 @@ const HomeList = ({ text, underline }: HomeListProps) => (
   <p
     className={`${
       underline ? "border-b border-gray-dim" : ""
-    } flex items-center text-lg`}
+    } flex items-center text-lg py-3`}
   >
-    <VscPassFilled className="mr-1 text-yellow-500" />
+    <VscPassFilled className="mr-1 text-yellow-300" />
     {text}
   </p>
 );

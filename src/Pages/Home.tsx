@@ -8,6 +8,7 @@ import defaultImage from "../assets/images/defaultimage.jpg";
 import freeImage from "../assets/images/freeplan.jpg";
 import PlansComp from "../Components/home/PlansComp";
 import HomeList from "../Components/home/HomeList";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -68,7 +69,7 @@ export default function Home() {
       />
 
       <div className="mt-12">
-        <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">
+        <h1 className="w-full grid place-items-center font-bold h-16 text-xl sm:text-2xl md:text-3xl border-b-2 border-blue-400">
           Free Sample House Plan
         </h1>
 
@@ -80,16 +81,57 @@ export default function Home() {
           detailed plans look like.
         </p>
 
-        <div className="w-full mt-5 pb-6 border-2 border-gray-dim text-left text-gray-light">
-          <picture>
-            <img src={freeImage} alt="free" className="w-full max-h-[50vh]" />
-          </picture>
+        <div className="w-full mt-5 pb-6 text-left text-gray-light">
+          <div className="my-10">
+            <picture>
+              <img src={freeImage} alt="free" className="w-full max-h-[50vh]" />
+            </picture>
 
-          <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">
-            What You Get
-          </h1>
+            <div>
+              <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">
+                What You Get
+              </h1>
 
-          <HomeList text=" Floor plan, Roof plan" underline={true} />
+              <HomeList text="Floor plan, Roof plan" underline={true} />
+              <HomeList text="Sections and Elevations" underline={true} />
+              <HomeList text="Door and window schedule" underline={true} />
+              <HomeList text="Furniture layout" underline={true} />
+              <HomeList text="Drainage and Plumbing plans" underline={true} />
+              <HomeList text="Electrical drawings" underline={true} />
+              <HomeList text="Structural drawings" underline={true} />
+              <HomeList
+                text="Bills of quantities - without rates"
+                underline={true}
+              />
+              <HomeList
+                text="Schedule of materials - without rates"
+                underline={true}
+              />
+              <HomeList text="Security system drawings" underline={false} />
+
+              <p className="text-yellow-600 text-center">
+                *Drawings Delivered in PDF and DWG Format
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full flex flex-col items-center justify-center">
+            <input
+              type="text"
+              className="downloadInput-style"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              className="downloadInput-style"
+              name="name"
+              placeholder="Name"
+            />
+            <button className="w-full bg-yellow-600 text-white h-9 mt-4">
+              Download Now
+            </button>
+          </div>
         </div>
       </div>
     </section>

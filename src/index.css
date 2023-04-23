@@ -157,4 +157,8 @@
     .aside-style {
         @apply w-full max-w-[500px] h-[140px] flex flex-col justify-center
     }
+    
+    .downloadInput-style {
+        @apply rounded-none my-4 h-9 px-2 w-full outline-none text-gray-dim
+    }
 }
