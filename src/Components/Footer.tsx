@@ -6,9 +6,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
   
   return (
-    <footer className="mt-14 w-full capitalize flex items-start sm2:items-center justify-center border-t-2 border-gray-dim">
-      <section className="p-3 my-14 w-full max-w-[1200px]">
-        <div className="uppercase flex items-center bg-blue-500 w-2/3 max-w-[350px] h-[120px]">
+    <footer className="mt-14 pb-5 w-full capitalize flex flex-col items-start sm2:items-center justify-center border-t-2 border-gray-dim">
+      <section className="p-3 my-14 w-full max-w-[1300px] grid md:grid-cols-2 lg:grid-cols-3 xl:flex xl:justify-between gap-3">
+        <div className="uppercase flex items-center bg-orange-400 rounded-lg w-2/3 max-w-[330px] h-[120px]">
           <h1 className="h1 text-white animate-pulse">logo here</h1>
         </div>
 
@@ -45,18 +45,19 @@ export default function Footer() {
           <Form className="my-4 flex hover:border-l-4 border-orange-500 p-4 md:flex-row flex-col">
             <input
               type="email"
-              className="w-full rounded-none px-2 h-9 outline-none"
+              className="w-full rounded-none px-2 h-9 outline-none xl:rounded-l-full text-gray-dark"
               placeholder="Email"
             />
-            <button className="capitalize bg-blue-500 hover:bg-opacity-80 text-white w-full rounded-none mt-3 md:mt-0 h-9">
+            <button className="capitalize bg-blue-500 hover:bg-opacity-80 text-white w-full rounded-none mt-3 md:mt-0 h-9 xl:rounded-r-full">
               join now
             </button>
           </Form>
         </div>
-        <p className="lowercase text-center underline text-sm sm:text-base hover:text-white">
+        
+      </section>
+      <p className="lowercase text-center underline text-sm sm:text-base hover:text-white">
           Copyright © {year} architecture.com{" "}
         </p>
-      </section>
     </footer>
   );
 }
