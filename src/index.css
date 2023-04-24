@@ -117,11 +117,11 @@
         @apply my-1 text-[.98rem]
     }
 
-    .underline-div {
+    .line-div {
         @apply my-1 text-[.98rem] border-b
     }
 
-    .underline {
+    .line {
         @apply w-20 h-[.15rem] bg-blue-500 mb-[-.09rem]
     }
 

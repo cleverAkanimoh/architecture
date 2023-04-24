@@ -25,22 +25,22 @@ const FreeHouseComp = () => (
             What You Get
           </h1>
 
-          <HomeList text="Floor plan, Roof plan" underline={true} />
-          <HomeList text="Sections and Elevations" underline={true} />
-          <HomeList text="Door and window schedule" underline={true} />
-          <HomeList text="Furniture layout" underline={true} />
-          <HomeList text="Drainage and Plumbing plans" underline={true} />
-          <HomeList text="Electrical drawings" underline={true} />
-          <HomeList text="Structural drawings" underline={true} />
+          <HomeList text="Floor plan, Roof plan" line={true} />
+          <HomeList text="Sections and Elevations" line={true} />
+          <HomeList text="Door and window schedule" line={true} />
+          <HomeList text="Furniture layout" line={true} />
+          <HomeList text="Drainage and Plumbing plans" line={true} />
+          <HomeList text="Electrical drawings" line={true} />
+          <HomeList text="Structural drawings" line={true} />
           <HomeList
             text="Bills of quantities - without rates"
-            underline={true}
+            line={true}
           />
           <HomeList
             text="Schedule of materials - without rates"
-            underline={true}
+            line={true}
           />
-          <HomeList text="Security system drawings" underline={false} />
+          <HomeList text="Security system drawings" line={false} />
 
           <p className="text-yellow-600 text-center">
             *Drawings Delivered in PDF and DWG Format

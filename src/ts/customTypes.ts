@@ -9,7 +9,7 @@ export type DropDownheadingProps = {
 
 export type HomeListProps = {
   text: string;
-  underline: boolean;
+  line: boolean;
 };
 
 export type BoxContainerProps = {
