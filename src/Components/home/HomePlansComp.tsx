@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { HomePlansProps, PlansCompProps } from "../../ts/customTypes";
 
-const HomePlansLink = ({ text, path, border }: PlansCompProps) => (
+export const HomePlansLink = ({ text, path, border }: PlansCompProps) => (
   <li className={`${border ? "border-b border-gray-dim" : ""} py-2`}>
     <Link
       to={path}
