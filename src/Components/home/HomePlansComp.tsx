@@ -27,7 +27,7 @@ const HomePlansComp = ({
   path06,
   path07,
 }: HomePlansProps) => (
-  <ul className="flex flex-col w-full my-6 py-4 px-3 border-t-2 bg-opacity-20 border-gray-dim text-white text-sm bg-gray-dim hover:bg-black">
+  <ul className="home-plans-style">
     <HomePlansLink path={path01} text={text01} border={true} />
     <HomePlansLink path={path02} text={text02} border={true} />
     <HomePlansLink path={path03} text={text03} border={true} />

@@ -163,6 +163,10 @@
     }
     
     .downloadInput-style {
-        @apply rounded-none my-4 h-9 px-2 w-full outline-none text-gray-dim
+        @apply rounded-none my-4 md:my-0 h-9 px-2 w-full outline-none text-gray-dim
+    }
+    
+    .home-plans-style {
+        @apply flex flex-col w-full my-6 py-16 px-3 border-t-2 bg-opacity-20 border-gray-dim text-white text-[1.05rem] bg-gray-dim hover:bg-black hover:bg-opacity-60
     }
 }

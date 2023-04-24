@@ -5,10 +5,9 @@ import ImageArea from "../Components/home/ImageArea";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import useWindowTitle from "../hooks/useWindowTitle";
 import defaultImage from "../assets/images/defaultimage.jpg";
-import freeImage from "../assets/images/freeplan.jpg";
 import PlansComp from "../Components/home/PlansComp";
-import HomeList from "../Components/home/HomeList";
 import HomePlansComp from "../Components/home/HomePlansComp";
+import FreeHouseComp from "../Components/home/FreeHouseComp";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -68,72 +67,8 @@ export default function Home() {
         path="view trending"
       />
 
-      <div className="mt-12">
-        <h1 className="h1 border-b-2 border-blue-400">
-          Free Sample House Plan
-        </h1>
-
-        <p>
-          A free sample 4 bedroom house plan with a majestic entrance crowned
-          with a 3.5 meter high decor. A covered porte-cochere ensures that you
-          can drive all the way up to the entrance of the house without ever
-          getting wet. Download this Sample House Plan to get an idea of how
-          detailed plans look like.
-        </p>
-
-        <div className="w-full mt-5 pb-6 text-left text-gray-light">
-          <div className="my-10 md:flex justify-center">
-            <picture className="h-full flex-1 md:mr-4">
-              <img src={freeImage} alt="free" className="w-full h-full" />
-            </picture>
-
-            <div>
-              <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">
-                What You Get
-              </h1>
-
-              <HomeList text="Floor plan, Roof plan" underline={true} />
-              <HomeList text="Sections and Elevations" underline={true} />
-              <HomeList text="Door and window schedule" underline={true} />
-              <HomeList text="Furniture layout" underline={true} />
-              <HomeList text="Drainage and Plumbing plans" underline={true} />
-              <HomeList text="Electrical drawings" underline={true} />
-              <HomeList text="Structural drawings" underline={true} />
-              <HomeList
-                text="Bills of quantities - without rates"
-                underline={true}
-              />
-              <HomeList
-                text="Schedule of materials - without rates"
-                underline={true}
-              />
-              <HomeList text="Security system drawings" underline={false} />
-
-              <p className="text-yellow-600 text-center">
-                *Drawings Delivered in PDF and DWG Format
-              </p>
-            </div>
-          </div>
-
-          <div className="w-full flex flex-col items-center justify-center md:flex-row md:gap-2">
-            <input
-              type="text"
-              className="downloadInput-style"
-              name="email"
-              placeholder="Email"
-            />
-            <input
-              type="text"
-              className="downloadInput-style"
-              name="name"
-              placeholder="Name"
-            />
-            <button className="w-full bg-yellow-600 text-white h-9 mt-4">
-              Download Now
-            </button>
-          </div>
-        </div>
-      </div>
+      <FreeHouseComp />
+      
       <div className="w-full capitalize">
         <h1 className="h1">Home Plan Collections</h1>
 
@@ -151,8 +86,8 @@ export default function Home() {
             text03="comtemporary house plans"
             text04="hostel & lodges plans"
             text05="apartment floor plans"
-            text06="traditional house plans"
-            text07="beach house floor plans"
+            text06="beach house floor plans"
+            text07="traditional house plans"
           />
 
           <HomePlansComp
@@ -163,15 +98,15 @@ export default function Home() {
             path05=""
             path06=""
             path07=""
-            text01="small house plans"
-            text02="modern house plans"
-            text03="comtemporary house plans"
-            text04="hostel & lodges plans"
-            text05="apartment floor plans"
-            text06="traditional house plans"
+            text01="tiny house plans"
+            text02="house house plans"
+            text03="mediterannean house plans"
+            text04="bungalow house plans"
+            text05="small cottage house plans"
+            text06="farmhouse floor plans"
             text07="beach house floor plans"
           />
-
+          
           <HomePlansComp
             path01=""
             path02=""
@@ -180,14 +115,15 @@ export default function Home() {
             path05=""
             path06=""
             path07=""
-            text01="small house plans"
-            text02="modern house plans"
-            text03="comtemporary house plans"
-            text04="hostel & lodges plans"
-            text05="apartment floor plans"
-            text06="traditional house plans"
-            text07="beach house floor plans"
+            text01="1 bedroom house plans"
+            text02="2 bedroom house plans"
+            text03="3 bedroom house plans"
+            text04="4 bedroom house plans"
+            text05="5+ bedroom house plans"
+            text06="l-Shaped house plans"
+            text07="Unique house plans"
           />
+          
         </div>
       </div>
     </section>
