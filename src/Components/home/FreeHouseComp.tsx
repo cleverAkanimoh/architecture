@@ -3,10 +3,10 @@ import HomeList from "./HomeList";
 import freeImage from "../../assets/images/freeplan.jpg";
 
 const FreeHouseComp = () => (
-  <div className="my-12">
+  <div className="my-12 w-full flex flex-col items-center justify-center">
     <h1 className="h1 border-b-2 border-blue-400">Free Sample House Plan</h1>
 
-    <p>
+    <p className="w-full">
       A free sample 4 bedroom house plan with a majestic entrance crowned with a
       3.5 meter high decor. A covered porte-cochere ensures that you can drive
       all the way up to the entrance of the house without ever getting wet.
@@ -14,13 +14,13 @@ const FreeHouseComp = () => (
       like.
     </p>
 
-    <div className="w-full mt-5 pb-6 text-left text-gray-light">
-      <div className="my-20 md:flex">
+    <div className="w-full flex flex-col items-center justify-center mt-5 pb-6 text-left text-gray-light">
+      <div className="my-20 md:flex w-full">
         <picture className="md:mr-4">
           <img src={freeImage} alt="free" className="w-full h-full" />
         </picture>
 
-        <div>
+        <div className="w-full md:w-1/2">
           <h1 className="text-xl sm:text-2xl md:text-3xl md:border-b md:border-gray-dim">
             What You Get
           </h1>

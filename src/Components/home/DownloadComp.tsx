@@ -1,5 +1,5 @@
 const DownloadComp = () => (
-  <div className="w-full flex flex-col items-center justify-center md:flex-row md:gap-2">
+  <div className="w-full max-w-[900px] flex flex-col items-center justify-center md:flex-row md:gap-2">
     <input
       type="text"
       className="downloadInput-style"
