@@ -56,7 +56,7 @@ export default function Footer() {
         
       </section>
       <p className="lowercase text-center underline text-sm sm:text-base hover:text-white">
-          Copyright © {year} architecture.com{" "}
+          Copyright © {year} architecture.com
         </p>
     </footer>
   );
