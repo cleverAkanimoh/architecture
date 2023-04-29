@@ -3,6 +3,9 @@ import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 import useWindowTitle from "../hooks/useWindowTitle";
 
 import defaultImage from "../assets/images/defaultimage.jpg";
+import defaultImage2 from "../assets/images/defaultimage2.jpg";
+import defaultImage3 from "../assets/images/defaultimage3.jpg";
+import defaultImage4 from "../assets/images/defaultimage4.jpg";
 
 import BoxContainer from "../Components/home/BoxContainer";
 import ImageArea from "../Components/home/ImageArea";
@@ -10,6 +13,7 @@ import WelcomeComp from "../Components/home/WelcomeComp";
 import PlansComp from "../Components/home/PlansComp";
 import FreeHouseComp from "../Components/home/FreeHouseComp";
 import HomePlanContainer from "../Components/home/HomePlanContainer";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -23,12 +27,30 @@ export default function Home() {
         <button className="btn-caro-style right-[0] rounded-l-full">
           <VscChevronRight />
         </button>
-
-        <ImageArea
-          to=".."
-          src={defaultImage}
-          title="Modern home plan - ID 24606"
-        />
+        
+        {/* <div className="flex"></div> */}
+        <Carousel>
+          <ImageArea
+            to=".."
+            src={defaultImage}
+            title="Modern home plan - ID 24606"
+          />
+          <ImageArea
+            to=".."
+            src={defaultImage2}
+            title="Modern home plan - ID 24606"
+          />
+          <ImageArea
+            to=".."
+            src={defaultImage3}
+            title="Modern home plan - ID 24606"
+          />
+          <ImageArea
+            to=".."
+            src={defaultImage4}
+            title="Modern home plan - ID 24606"
+          />
+        </Carousel>
       </div>
 
       <WelcomeComp

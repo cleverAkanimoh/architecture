@@ -7,14 +7,14 @@ const BoxContainer = ({ to, src, title, ...rest }: ImageAreaProps) => (
       <div className="w-full h-[30vw] relative items-center justify-center">
         <img
           src={src}
-          alt={"title"}
+          alt={title}
           className="w-full h-full hover:scale-[1.1] transition-all duration-200"
         />
 
         <div className="absolute rounded-l-full bottom-0 right-0 py-1 px-3 bg-gray-900 text-white font-sans">
           <p>{title}</p>
         </div>
-      </div>{" "}
+      </div>
     </Link>
   </div>
 );
