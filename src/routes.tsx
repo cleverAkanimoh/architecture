@@ -10,9 +10,8 @@ import Blog from "./Pages/Blog";
 import NotFound from "./Pages/NotFound";
 
 const routes = createRoutesFromElements(
-  <Route path="/" element={<Layout />}>
+  <Route path="architecture" element={<Layout />}>
     <Route index element={<Home />} />
-    <Route path="architecture-website" element={<Home />} />
 
     <Route path="about" element={<About />} />
     <Route path="contact" element={<Contact />} />
