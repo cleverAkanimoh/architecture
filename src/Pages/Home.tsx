@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <section className="general-flex">
-      <div className="relative hidden sm2:block">
+      <div className="w-full h-[32vw] relative hidden sm2:block overflow-y-hiden">
         <button className="btn-caro-style left-[0] rounded-r-full">
           <VscChevronLeft />
         </button>
@@ -36,29 +36,28 @@ export default function Home() {
           <VscChevronRight />
         </button>
 
-        <Slider {...settings}>
-          
-            <ImageArea
-              to="collections"
-              src={defaultImage}
-              title="Modern home plan - ID 24606"
-            />
-            <ImageArea
-              to=".."
-              src={defaultImage2}
-              title="Modern home plan - ID 24606"
-            />
-            <ImageArea
-              to=".."
-              src={defaultImage3}
-              title="Modern home plan - ID 24606"
-            />
-            <ImageArea
-              to=".."
-              src={defaultImage4}
-              title="Modern home plan - ID 24606"
-            />
-        </Slider>
+        <div className="w-full flex absolute left-0 top-0">
+          <ImageArea
+            to="modern"
+            src={defaultImage}
+            title="Modern home plan - ID 2460--"
+          />
+          <ImageArea
+            to="3bedroom"
+            src={defaultImage2}
+            title="Modern home plan - ID 24606"
+          />
+          <ImageArea
+            to="luxury"
+            src={defaultImage3}
+            title="Modern home plan - ID 24606"
+          />
+          <ImageArea
+            to="best"
+            src={defaultImage4}
+            title="Modern home plan - ID 24606"
+          />
+        </div>
       </div>
 
       <WelcomeComp
