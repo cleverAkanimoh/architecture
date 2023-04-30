@@ -37,9 +37,9 @@ export default function Home() {
         </button>
 
         <Slider {...settings}>
-          <div className="flex w-full">
+          
             <ImageArea
-              to=".."
+              to="collections"
               src={defaultImage}
               title="Modern home plan - ID 24606"
             />
@@ -58,7 +58,6 @@ export default function Home() {
               src={defaultImage4}
               title="Modern home plan - ID 24606"
             />
-          </div>
         </Slider>
       </div>
 
