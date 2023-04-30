@@ -11,7 +11,7 @@ export default function TopSection() {
   return (
     <div className="topsection">
       <section className="topsection-section">
-        <Link to={"architecture-website"} className="flex items-center">
+        <Link to={"."} className="flex items-center">
           <VscHome className="text-[30px] sm:text-[50px] md:text-[60px] text-blue-300 mr-1" />
           <h4 className="topsection-logo">
             <span className="architecture">architecture</span>

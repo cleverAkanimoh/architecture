@@ -10,18 +10,20 @@ import Blog from "./Pages/Blog";
 import NotFound from "./Pages/NotFound";
 
 const routes = createRoutesFromElements(
-  <Route path="architecture" element={<Layout />}>
-    <Route index element={<Home />} />
+  <Route path="/">
+    <Route path="architecture" element={<Layout />}>
+      <Route index element={<Home />} />
 
-    <Route path="about" element={<About />} />
-    <Route path="contact" element={<Contact />} />
-    <Route path="blog" element={<Blog />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="blog" element={<Blog />} />
 
-    <Route path="collections" element={<Collections />}>
-      <Route />
+      <Route path="collections" element={<Collections />}>
+        <Route />
+      </Route>
+      
+      <Route path="*" element={<NotFound />} />
     </Route>
-
-    <Route path="*" element={<NotFound />} />
   </Route>
 );
 

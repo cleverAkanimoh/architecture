@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ImageAreaProps } from "../../ts/customTypes";
 
 const BoxContainer = ({ to, src, title, ...rest }: ImageAreaProps) => (
-  <div {...rest} className="overflow-hidden">
+  <div {...rest} className="w-full overflow-hidden">
     <Link to={to}>
       <div className="w-full h-[30vw] relative items-center justify-center">
         <img

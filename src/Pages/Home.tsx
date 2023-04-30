@@ -1,6 +1,7 @@
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
 import useWindowTitle from "../hooks/useWindowTitle";
+import Slider from "react-slick";
 
 import defaultImage from "../assets/images/defaultimage.jpg";
 import defaultImage2 from "../assets/images/defaultimage2.jpg";
@@ -17,9 +18,17 @@ import HomePlanContainer from "../Components/home/HomePlanContainer";
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <section className="general-flex">
-      <div className="relative z-0 hidden sm2:block">
+      <div className="relative hidden sm2:block">
         <button className="btn-caro-style left-[0] rounded-r-full">
           <VscChevronLeft />
         </button>
@@ -27,27 +36,30 @@ export default function Home() {
           <VscChevronRight />
         </button>
 
-        {/* <div className="flex"></div> */}
-        <ImageArea
-          to=".."
-          src={defaultImage}
-          title="Modern home plan - ID 24606"
-        />
-        <ImageArea
-          to=".."
-          src={defaultImage2}
-          title="Modern home plan - ID 24606"
-        />
-        <ImageArea
-          to=".."
-          src={defaultImage3}
-          title="Modern home plan - ID 24606"
-        />
-        <ImageArea
-          to=".."
-          src={defaultImage4}
-          title="Modern home plan - ID 24606"
-        />
+        <Slider {...settings}>
+          <div className="flex w-full">
+            <ImageArea
+              to=".."
+              src={defaultImage}
+              title="Modern home plan - ID 24606"
+            />
+            <ImageArea
+              to=".."
+              src={defaultImage2}
+              title="Modern home plan - ID 24606"
+            />
+            <ImageArea
+              to=".."
+              src={defaultImage3}
+              title="Modern home plan - ID 24606"
+            />
+            <ImageArea
+              to=".."
+              src={defaultImage4}
+              title="Modern home plan - ID 24606"
+            />
+          </div>
+        </Slider>
       </div>
 
       <WelcomeComp
