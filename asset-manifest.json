@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/architecture-website/static/css/main.d200310b.css",
-    "main.js": "/architecture-website/static/js/main.f968c22f.js",
-    "static/js/787.3c0238fc.chunk.js": "/architecture-website/static/js/787.3c0238fc.chunk.js",
-    "static/media/defaultimage.jpg": "/architecture-website/static/media/defaultimage.06b71ecd7d6ba6ebd8a2.jpg",
-    "static/media/freeplan.jpg": "/architecture-website/static/media/freeplan.59de6a1912908d379e3d.jpg",
-    "index.html": "/architecture-website/index.html",
-    "main.d200310b.css.map": "/architecture-website/static/css/main.d200310b.css.map",
-    "main.f968c22f.js.map": "/architecture-website/static/js/main.f968c22f.js.map",
-    "787.3c0238fc.chunk.js.map": "/architecture-website/static/js/787.3c0238fc.chunk.js.map"
+    "main.css": "/architecture/static/css/main.e00598bc.css",
+    "main.js": "/architecture/static/js/main.4f2240a5.js",
+    "static/js/787.3c0238fc.chunk.js": "/architecture/static/js/787.3c0238fc.chunk.js",
+    "static/media/defaultimage3.jpg": "/architecture/static/media/defaultimage3.e778e38a55e8161c7689.jpg",
+    "static/media/defaultimage4.jpg": "/architecture/static/media/defaultimage4.554f616cf0ab24205987.jpg",
+    "static/media/defaultimage2.jpg": "/architecture/static/media/defaultimage2.23a428a9b3c95b3707c5.jpg",
+    "static/media/defaultimage.jpg": "/architecture/static/media/defaultimage.06b71ecd7d6ba6ebd8a2.jpg",
+    "static/media/freeplan.jpg": "/architecture/static/media/freeplan.59de6a1912908d379e3d.jpg",
+    "index.html": "/architecture/index.html",
+    "main.e00598bc.css.map": "/architecture/static/css/main.e00598bc.css.map",
+    "main.4f2240a5.js.map": "/architecture/static/js/main.4f2240a5.js.map",
+    "787.3c0238fc.chunk.js.map": "/architecture/static/js/787.3c0238fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d200310b.css",
-    "static/js/main.f968c22f.js"
+    "static/css/main.e00598bc.css",
+    "static/js/main.4f2240a5.js"
   ]
 }
