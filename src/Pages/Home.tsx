@@ -18,17 +18,9 @@ import HomePlanContainer from "../Components/home/HomePlanContainer";
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <section className="general-flex">
-      <div className="w-full h-[32vw] relative hidden sm2:block overflow-y-hiden">
+      <div className="w-full h-[32vw] relative hidden sm2:flex overflow-y-hiden">
         <button className="btn-caro-style left-[0] rounded-r-full">
           <VscChevronLeft />
         </button>
@@ -36,28 +28,26 @@ export default function Home() {
           <VscChevronRight />
         </button>
 
-        <div className="w-full flex absolute left-0 top-0">
-          <ImageArea
-            to="modern"
-            src={defaultImage}
-            title="Modern home plan - ID 2460--"
-          />
-          <ImageArea
-            to="3bedroom"
-            src={defaultImage2}
-            title="Modern home plan - ID 24606"
-          />
-          <ImageArea
-            to="luxury"
-            src={defaultImage3}
-            title="Modern home plan - ID 24606"
-          />
-          <ImageArea
-            to="best"
-            src={defaultImage4}
-            title="Modern home plan - ID 24606"
-          />
-        </div>
+        <ImageArea
+          to="modern"
+          src={defaultImage}
+          title="Modern home plan - ID 24606"
+        />
+        <ImageArea
+          to="3bedroom"
+          src={defaultImage2}
+          title="Modern home plan - ID 24606"
+        />
+        <ImageArea
+          to="luxury"
+          src={defaultImage3}
+          title="Modern home plan - ID 24606"
+        />
+        <ImageArea
+          to="best"
+          src={defaultImage4}
+          title="Modern home plan - ID 24606"
+        />
       </div>
 
       <WelcomeComp

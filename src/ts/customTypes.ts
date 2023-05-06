@@ -22,6 +22,7 @@ export type ImageAreaProps = {
   to: string;
   src: string;
   title: string;
+  left: number;
 } & React.ComponentProps<"div">;
 
 export type WelcomeCompProps = {
