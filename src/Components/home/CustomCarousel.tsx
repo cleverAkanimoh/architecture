@@ -6,9 +6,7 @@ import defaultImage2 from "../../assets/images/defaultimage2.jpg";
 import defaultImage3 from "../../assets/images/defaultimage3.jpg";
 import defaultImage4 from "../../assets/images/defaultimage4.jpg";
 
-type Props = {}
-
-export default function CustomCarousel({}: Props) {
+export default function CustomCarousel() {
   return (
     <div className="w-full h-[32vw] relative hidden sm2:flex overflow-y-hiden">
         <button className="btn-caro-style left-[0] rounded-r-full">
