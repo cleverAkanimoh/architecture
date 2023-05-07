@@ -1,6 +1,6 @@
 # website project
 
-Open [the project in your browser](https://cleverakanimoh.github.io/architecture-website/)
+Open [the project in your browser](https://cleverakanimoh.github.io/architecture/)
 
 ## Getting Started with Create React App
 
