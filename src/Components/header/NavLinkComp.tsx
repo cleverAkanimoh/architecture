@@ -16,6 +16,7 @@ export default function NavLinkComp() {
         <NavLink
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
           to={"."}
+          end
         >
           home
         </NavLink>

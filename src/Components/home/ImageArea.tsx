@@ -4,7 +4,7 @@ import { ImageAreaProps } from "../../ts/customTypes";
 const ImageArea = ({ to, src, title, ...rest }: ImageAreaProps) => (
   <div
     {...rest}
-    className="w-full h-[30vw] relative items-center justify-center overflow-hidden"
+    className="w-full h-[32vw] relative items-center justify-center overflow-hidden transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
   >
     <Link to={`collections/${to}`}>
       <img

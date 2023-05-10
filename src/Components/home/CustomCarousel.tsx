@@ -17,7 +17,7 @@ export default function CustomCarousel() {
         </button>
 
         <div>
-          <div>
+          <div className="flex relative">
             <ImageArea
               to="modern_home"
               src={defaultImage}
