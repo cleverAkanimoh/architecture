@@ -31,7 +31,7 @@ const HomePlanContainer = () => (
         path06=""
         path07=""
         text01="tiny house plans"
-        text02="house house plans"
+        text02="house floor plans"
         text03="mediterannean house plans"
         text04="bungalow house plans"
         text05="small cottage house plans"
