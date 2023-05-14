@@ -170,6 +170,22 @@
         @apply flex flex-col w-full my-6 py-16 px-3 border-t-2 bg-opacity-20 border-gray-dim text-white text-[1.05rem] bg-gray-dim hover:bg-black hover:bg-opacity-60
     }
     .res-caurosel {
-        @apply w-[450px]
+        @apply w-[85vw]
+    }
+    
+    .slide-article-style {
+        @apply absolute top-0 left-0 w-full h-full invisible transition-transform duration-500 ease-linear motion-reduce:transition-none
+    }
+    
+    .nextSlide {
+        @apply translate-x-[100%]
+    }
+    
+    .activeSlide {
+        @apply translate-x-0 opacity-100 visible
+    }
+    
+    .lastSlide {
+        @apply translate-x-[-100%]
     }
 }

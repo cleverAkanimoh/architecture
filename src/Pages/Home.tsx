@@ -3,6 +3,7 @@ import useWindowTitle from "../hooks/useWindowTitle";
 
 import BoxContainer from "../Components/home/BoxContainer";
 
+import React from "react";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import PlansComp from "../Components/home/PlansComp";
 import FreeHouseComp from "../Components/home/FreeHouseComp";
@@ -14,7 +15,7 @@ export default function Home() {
 
   return (
     <section className="general-flex">
-      
+
       <CustomCarousel />
 
       <WelcomeComp

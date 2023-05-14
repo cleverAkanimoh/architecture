@@ -1,9 +1,9 @@
-import defaultImage from "../../assets/images/defaultimage.jpg";
-import defaultImage2 from "../../assets/images/defaultimage2.jpg";
-import defaultImage3 from "../../assets/images/defaultimage3.jpg";
-import defaultImage4 from "../../assets/images/defaultimage4.jpg";
+import defaultImage from "../assets/images/defaultimage.jpg";
+import defaultImage2 from "../assets/images/defaultimage2.jpg";
+import defaultImage3 from "../assets/images/defaultimage3.jpg";
+import defaultImage4 from "../assets/images/defaultimage4.jpg";
 
-export default [
+const data = [
   {
     id: 1,
     path: "modern_home",
@@ -29,3 +29,5 @@ export default [
     title: "6 Bedroom house plan - ID 26401",
   },
 ];
+
+export default data
