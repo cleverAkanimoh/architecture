@@ -169,4 +169,7 @@
     .home-plans-style {
         @apply flex flex-col w-full my-6 py-16 px-3 border-t-2 bg-opacity-20 border-gray-dim text-white text-[1.05rem] bg-gray-dim hover:bg-black hover:bg-opacity-60
     }
+    .res-caurosel {
+        @apply w-[450px]
+    }
 }
