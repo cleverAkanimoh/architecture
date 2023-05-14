@@ -174,7 +174,7 @@
     }
     
     .slide-article-style {
-        @apply absolute top-0 left-0 w-full h-full invisible transition-transform duration-500 ease-linear motion-reduce:transition-none
+        @apply absolute top-0 left-0 w-full h-full invisible opacity-50 transition-transform duration-[800ms] ease-linear motion-reduce:transition-none
     }
     
     .nextSlide {

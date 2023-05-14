@@ -9,6 +9,7 @@ import PlansComp from "../Components/home/PlansComp";
 import FreeHouseComp from "../Components/home/FreeHouseComp";
 import HomePlanContainer from "../Components/home/HomePlanContainer";
 import CustomCarousel from "../Components/home/CustomCarousel";
+import NewHouseSlider from "../Components/home/NewHouseSlider";
 
 export default function Home() {
   useWindowTitle("Home | extra text goes here");
@@ -49,6 +50,8 @@ export default function Home() {
         text="Curated monthly, these house plans represent current market trends"
         path="view new"
       />
+      
+      <NewHouseSlider />
 
       <PlansComp
         heading="Trending House Plans"

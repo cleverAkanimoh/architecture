@@ -19,7 +19,7 @@ export default function CustomCarousel() {
   }, [index, properties])
 
   React.useEffect(() => {
-    let sliderInterval = setInterval(() => setIndex(index + 1), 5000);
+    let sliderInterval = setInterval(() => setIndex(index + 1), 10000);
 
     return () => clearInterval(sliderInterval);
   }, [index])

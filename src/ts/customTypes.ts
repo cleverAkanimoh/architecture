@@ -24,31 +24,44 @@ export type ImageAreaProps = {
   title: string;
 } & React.ComponentProps<"div">;
 
+export type NewHouseCompProps = {
+  path: string;
+  src: string;
+  title: string;
+  price: string;
+  desc1: string;
+  desc2: string;
+  desc3: string;
+  desc4: string;
+  desc5: string;
+  desc6: string;
+} & React.ComponentProps<"div">;
+
 export type WelcomeCompProps = {
   heading: string;
   text: string;
 } & React.ComponentProps<"div">;
 
 export type PlansCompProps = {
-  heading?: string
-  text: string
-  path: string
-  border?: boolean | undefined
+  heading?: string;
+  text: string;
+  path: string;
+  border?: boolean | undefined;
 };
 
 export type HomePlansProps = {
-  text01: string
-  text02: string
-  text03: string
-  text04: string
-  text05: string
-  text06: string
-  text07: string
-  path01: string
-  path02: string
-  path03: string
-  path04: string
-  path05: string
-  path06: string
-  path07: string
-}
+  text01: string;
+  text02: string;
+  text03: string;
+  text04: string;
+  text05: string;
+  text06: string;
+  text07: string;
+  path01: string;
+  path02: string;
+  path03: string;
+  path04: string;
+  path05: string;
+  path06: string;
+  path07: string;
+};
