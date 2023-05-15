@@ -1,5 +1,7 @@
 import defaultImage from "../assets/images/defaultimage.jpg";
-
+import defaultImage2 from "../assets/images/defaultimage2.jpg";
+import defaultImage3 from "../assets/images/defaultimage3.jpg";
+import defaultImage4 from "../assets/images/defaultimage4.jpg";
 export default [
   {
     id: 1,
@@ -17,7 +19,7 @@ export default [
   {
     id: 2,
     path: "house-designs",
-    src: defaultImage,
+    src: defaultImage2,
     title: "2 bedroom 3 bedroom house designs - ID 13228",
     price: "$349.00",
     desc1: "2 stories",
@@ -30,7 +32,7 @@ export default [
   {
     id: 3,
     path: "house-designs",
-    src: defaultImage,
+    src: defaultImage3,
     title: "3 bedroom 2 bedroom house designs - ID 13228",
     price: "$349.00",
     desc1: "1 story",
@@ -43,7 +45,7 @@ export default [
   {
     id: 4,
     path: "house-designs",
-    src: defaultImage,
+    src: defaultImage4,
     title: "3 bedroom 2 bedroom house designs - ID 13228",
     price: "$349.00",
     desc1: "1 story",
@@ -56,7 +58,7 @@ export default [
   {
     id: 5,
     path: "house-designs",
-    src: defaultImage,
+    src: defaultImage3,
     title: "3 bedroom 2 bedroom house designs - ID 13228",
     price: "$349.00",
     desc1: "1 story",
@@ -69,7 +71,7 @@ export default [
   {
     id: 6,
     path: "house-designs",
-    src: defaultImage,
+    src: defaultImage2,
     title: "3 bedroom 2 bedroom house designs - ID 13228",
     price: "$349.00",
     desc1: "1 story",

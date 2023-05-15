@@ -31,16 +31,16 @@ export default function NewHouseSlider() {
 
     const propertyMap = properties.map((property, propertyIndex) => {
         const { id,path, src, title, price, desc1, desc2, desc3, desc4, desc5, desc6 } = property;
-        let position = 'nextSlide';
+        let position = 'newSlide';
         if (propertyIndex === index) {
-            position = 'activeSlide'
+            position = 'currentSlide'
         }
         if (propertyIndex === index - 1 || (index === 0 && propertyIndex === properties.length - 1)) {
-            position = 'lastSlide'
+            position = 'prevSlide'
         }
 
         return (
-            <div className={`${position} slide-article-style`} key={id}>
+            <div className={`${position} slide-article-style grid sm2:grid-cols-2 sm2:gap-8`} key={id}>
                 <NewHouseComp path={path} src={src} title={title} price={price} desc1={desc1} desc2={desc2} desc3={desc3} desc4={desc4} desc5={desc5} desc6={desc6}  />
             </div>
         )

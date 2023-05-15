@@ -174,7 +174,7 @@
     }
     
     .slide-article-style {
-        @apply absolute top-0 left-0 w-full h-full invisible opacity-50 transition-transform duration-[800ms] ease-linear motion-reduce:transition-none
+        @apply absolute top-0 left-0 w-full h-full  opacity-75 transition-transform duration-[800ms] ease-linear motion-reduce:transition-none invisible
     }
     
     .nextSlide {
@@ -187,5 +187,17 @@
     
     .lastSlide {
         @apply translate-x-[-100%]
+    }
+    
+    .newSlide {
+        @apply translate-x-[100%] visible
+    }
+    
+    .currentSlide {
+        @apply translate-x-[0%] left-[0%] opacity-100 visible
+    }
+    
+    .prevSlide {
+        @apply translate-x-[0%] left-[50%] -z-10 visible
     }
 }
