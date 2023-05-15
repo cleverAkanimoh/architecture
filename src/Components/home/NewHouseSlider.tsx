@@ -1,7 +1,7 @@
 import React from 'react'
 import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc'
-import ImageArea from './ImageArea'
-import data from '../../ts/properties'
+import data from '../../ts/newHouseProperties'
+import NewHouseComp from './NewHouseComp'
 
 export default function NewHouseSlider() {
 
@@ -30,7 +30,7 @@ export default function NewHouseSlider() {
 
 
     const propertyMap = properties.map((property, propertyIndex) => {
-        const { id, path, src, title } = property;
+        const { id,path, src, title, price, desc1, desc2, desc3, desc4, desc5, desc6 } = property;
         let position = 'nextSlide';
         if (propertyIndex === index) {
             position = 'activeSlide'
@@ -40,15 +40,15 @@ export default function NewHouseSlider() {
         }
 
         return (
-            <div className={`${position} slide-article-style`} key={id} >
-                <ImageArea to={path} src={src} title={title} />
+            <div className={`${position} slide-article-style`} key={id}>
+                <NewHouseComp path={path} src={src} title={title} price={price} desc1={desc1} desc2={desc2} desc3={desc3} desc4={desc4} desc5={desc5} desc6={desc6}  />
             </div>
         )
     })
 
 
     return (
-        <section className="res-caurosel h-[32vw] relative hidden sm2:flex overflow-hidden">
+        <section className="w-full h-[250px] relative flex overflow-hidden">
             <div>
                 <button className="btn-caro-style left-[0] rounded-r-full" onClick={moveSlideLeft} >
                     <VscChevronLeft />

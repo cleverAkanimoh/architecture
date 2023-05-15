@@ -58,6 +58,8 @@ export default function Home() {
         text="Explore our newest house plans added on a weekly basis"
         path="view trending"
       />
+      
+      <NewHouseSlider />
 
       <FreeHouseComp />
 

@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-14 pb-5 w-full capitalize flex flex-col items-center justify-center border-t-2 border-gray-dim">
-      <section className="p-3 my-14 m-w-[300px] w-[99%] max-w-[1300px] border grid md:grid-cols-2 lg:grid-cols-3 xl:flex xl:justify-between gap-8 xl:items-start">
+      <section className="p-3 my-14 m-w-[300px] w-[99%] max-w-[1300px] grid md:grid-cols-2 lg:grid-cols-3 xl:flex xl:justify-between gap-8 xl:items-start">
 
         <div className="uppercase flex items-center bg-orange-400 rounded-lg w-2/3 max-w-[350px] h-[120px]">
           <h1 className="h1 text-white animate-pulse">logo here</h1>
