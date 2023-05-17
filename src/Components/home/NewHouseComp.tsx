@@ -6,8 +6,8 @@ const NewHouseComp = ({ path, src, title, price, desc1, desc2, desc3, desc4, des
         {...rest}
         className="w-full h-[200px] text-white relative items-center justify-center overflow-hidden"
     >
-        <Link to={`products/${path}`}>
-            <div className="w-full absolute top-0 left-0 hover:text-white bg-black bg-opacity-30 py-1">
+        <Link className='hover:text-white text-[0.5rem]' to={`products/${path}`}>
+            <div className="w-full absolute top-0 left-0 hover:text-white z-40 bg-black bg-opacity-30 py-1">
                 <p>{title}</p>
             </div>
             
@@ -21,7 +21,7 @@ const NewHouseComp = ({ path, src, title, price, desc1, desc2, desc3, desc4, des
                 <p>{price}</p>
             </div>
 
-            <div className="bg-white absolute">
+            <div className="bg-red-500 absolute bottom-0 grid grid-cols-3 p-1 z-40 w-full">
                 <p>{desc1}</p>
                 <p>{desc2}</p>
                 <p>{desc3}</p>
