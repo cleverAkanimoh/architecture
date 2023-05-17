@@ -40,7 +40,7 @@ export default function NewHouseSlider() {
         }
 
         return (
-            <div className={`${position} slide-article-style grid sm2:grid-cols-2 sm2:gap-8`} key={id}>
+            <div className={`${position} multiSlide-article-style`} key={id}>
                 <NewHouseComp path={path} src={src} title={title} price={price} desc1={desc1} desc2={desc2} desc3={desc3} desc4={desc4} desc5={desc5} desc6={desc6}  />
             </div>
         )
