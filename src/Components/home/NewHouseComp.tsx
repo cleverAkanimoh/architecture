@@ -10,7 +10,7 @@ const NewHouseComp = ({ path, src, title, price, desc1, desc2, desc3, desc4, des
             <div className="w-full absolute top-0 left-0 hover:text-white z-40 bg-black bg-opacity-30 py-1">
                 <p>{title}</p>
             </div>
-            
+
             <img
                 src={src}
                 alt={title}

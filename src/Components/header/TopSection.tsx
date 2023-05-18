@@ -1,6 +1,6 @@
 import React from "react";
 import { BsMessenger, BsSearch, BsWhatsapp } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import { VscClose, VscHome } from "react-icons/vsc";
 
 export default function TopSection() {
@@ -48,7 +48,7 @@ export default function TopSection() {
               {toggleSearch ? <VscClose /> : <BsSearch />}
             </button>
             
-              <div className={`${toggleSearch ? 'fixed right-1 top-[38px] sm:top-[58px] md:flex' : 'hidden md:flex'} h-[30px]  text-gray-dark flex z-50`}>
+              <Form className={`${toggleSearch ? 'fixed right-1 top-[38px] sm:top-[58px] md:flex' : 'hidden md:flex'} h-[30px]  text-gray-dark flex z-50`}>
                 <input
                   type="text"
                   className="rounded-l-sm outline-none px-2"
@@ -58,7 +58,7 @@ export default function TopSection() {
                 <button className="px-2 rounded-none bg-gray-dark text-white">
                   <BsSearch />
                 </button>
-              </div>
+              </Form>
             
           </div>
         </div>
