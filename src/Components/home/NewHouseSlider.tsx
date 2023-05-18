@@ -4,20 +4,24 @@ import NewHouseComp from './NewHouseComp'
 
 export default function NewHouseSlider() {
 
-    let box = document.querySelector('.properties-container') as HTMLDivElement
+    let box = document.querySelector('.properties-container') as HTMLDivElement | null
 
     let properties = data
 
     const moveSlideRight = () => {
-        let width = box?.clientWidth
-        box.scrollLeft = box?.scrollLeft - width
-        console.log(width);
-        
+        if (box != null) {
+            let width = box?.clientWidth
+            box.scrollLeft = box?.scrollLeft - width
+            console.log(width);
+        }
     }
 
     const moveSlideLeft = () => {
-        let width = box?.clientWidth
-        box.scrollLeft = box?.scrollLeft + width
+        if (box != null) {
+            let width = box?.clientWidth
+            box.scrollLeft = box?.scrollLeft - width
+            console.log(width);
+        }
     }
 
 
