@@ -4,7 +4,7 @@ import NewHouseComp from './NewHouseComp'
 
 export default function NewHouseSlider() {
 
-    let box = document.querySelector('.properties-container')
+    let box = document.querySelector('.properties-container') as HTMLDivElement
 
     let properties = data
 
