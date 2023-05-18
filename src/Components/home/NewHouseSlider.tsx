@@ -42,9 +42,9 @@ export default function NewHouseSlider() {
                     <VscChevronRight />
                 </button>
 
-                <article className='properties-container'>
+                <div className='properties-container'>
                     {propertyMap}
-                </article>
+                </div>
 
             </div>
         </section>
