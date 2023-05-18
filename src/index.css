@@ -189,4 +189,16 @@
   .lastSlide {
     @apply translate-x-[-100%];
   }
+  
+  .property-card {
+    @apply w-[300px] h-[300px] text-white relative items-center justify-center
+  }
+  
+  .properties-slider {
+    @apply w-full h-[320px] my-4 relative flex overflow-hidden
+  }
+  
+  .properties-container {
+    @apply flex px-1 relative gap-12 scroll-smooth overflow-x-hidden
+  }
 }

@@ -4,7 +4,7 @@ import { NewHouseCompProps } from "../../ts/customTypes";
 const NewHouseComp = ({ path, src, title, price, desc1, desc2, desc3, desc4, desc5, desc6, ...rest }: NewHouseCompProps) => (
     <div
         {...rest}
-        className="w-full h-[200px] text-white relative items-center justify-center overflow-hidden"
+        className="property-card"
     >
         <Link className='hover:text-white text-[0.5rem]' to={`products/${path}`}>
             <div className="w-full absolute top-0 left-0 hover:text-white z-40 bg-black bg-opacity-30 py-1">

@@ -48,7 +48,7 @@ export default function TopSection() {
               {toggleSearch ? <VscClose /> : <BsSearch />}
             </button>
             
-              <Form className={`${toggleSearch ? 'fixed right-1 top-[38px] sm:top-[58px] md:flex' : 'hidden md:flex'} h-[30px]  text-gray-dark flex z-50`}>
+              <Form action="search" className={`${toggleSearch ? 'fixed right-1 top-[38px] sm:top-[58px] md:flex' : 'hidden md:flex'} h-[30px]  text-gray-dark flex z-50`}>
                 <input
                   type="text"
                   className="rounded-l-sm outline-none px-2"
