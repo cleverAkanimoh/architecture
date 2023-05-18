@@ -1,29 +1,33 @@
+import { useRef } from 'react'
 import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc'
 import data from '../../ts/newHouseProperties'
 import NewHouseComp from './NewHouseComp'
 
 export default function NewHouseSlider() {
 
-    let box = document.querySelector('.properties-container') as HTMLDivElement | null
+    let articleRef = useRef()
 
     let properties = data
 
     const moveSlideRight = () => {
-        if (box != null) {
-            let width = box?.clientWidth
-            box.scrollLeft = box?.scrollLeft - width
-            console.log(width);
-        }
+        // if (box != null) {
+        //     let width = box?.clientWidth
+        //     box.scrollLeft = box?.scrollLeft - width
+        //     console.log(width);
+        //     console.log(box.scrollLeft);
+    //     }
     }
 
     const moveSlideLeft = () => {
-        if (box != null) {
-            let width = box?.clientWidth
-            box.scrollLeft = box?.scrollLeft - width
-            console.log(width);
-        }
+        // if (box != null) {
+        //     let width = box?.clientWidth
+        //     box.scrollLeft = box?.scrollLeft + width
+        //     console.log(width);
+        //     console.log(box.scrollLeft);
+    //     }
     }
 
+    console.log(articleRef);
 
     const propertyMap = properties.map((property) => {
         const { id, path, src, title, price, desc1, desc2, desc3, desc4, desc5, desc6 } = property
@@ -46,9 +50,9 @@ export default function NewHouseSlider() {
                     <VscChevronRight />
                 </button>
 
-                <div className='properties-container'>
+                <article className='properties-container'>
                     {propertyMap}
-                </div>
+                </article>
 
             </div>
         </section>
