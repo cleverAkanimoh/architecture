@@ -4,17 +4,19 @@ import NewHouseComp from './NewHouseComp'
 
 export default function NewHouseSlider() {
 
-    const box = document.querySelector('.properties-container')
+    let box = document.querySelector('.properties-container')
 
     let properties = data
 
     const moveSlideRight = () => {
         let width = box?.clientWidth
-        box?.scrollLeft = boxScrollLeft - width
+        box.scrollLeft = box?.scrollLeft - width
+        console.log(width);
+        
     }
 
     const moveSlideLeft = () => {
-        let width = box?.clientWidth || 0
+        let width = box?.clientWidth
         box.scrollLeft = box?.scrollLeft + width
     }
 
