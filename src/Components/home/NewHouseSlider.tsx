@@ -5,29 +5,25 @@ import NewHouseComp from './NewHouseComp'
 
 export default function NewHouseSlider() {
 
-    let articleRef = useRef<HTMLElement>(null)
+    let properties = data
+
+    let articleRef = useRef<HTMLDivElement>(null)
 
     let box = articleRef.current
 
-    let properties = data
-
     const moveSlideRight = () => {
+
         if (box != null) {
             let width = box.clientWidth
             box.scrollLeft = box.scrollLeft + width
-            console.log(width);
-            console.log(box.scrollLeft);
-            console.log(articleRef);
         }
     }
 
     const moveSlideLeft = () => {
+
         if (box != null) {
             let width = box.clientWidth
             box.scrollLeft = box.scrollLeft - width
-            console.log(width);
-            console.log(box.scrollLeft);
-            console.log(articleRef);
         }
     }
 
@@ -40,19 +36,20 @@ export default function NewHouseSlider() {
 
     return (
         <section className="properties-slider">
-            <div>
-                <button className="btn-caro-style left-[0] rounded-r-full" onClick={moveSlideLeft} >
-                    <VscChevronLeft />
-                </button>
-                <button className="btn-caro-style right-[0] rounded-l-full" onClick={moveSlideRight} >
-                    <VscChevronRight />
-                </button>
+            <button className="btn-caro-style left-[0] rounded-r-full" onClick={moveSlideLeft} >
+                <VscChevronLeft />
+            </button>
+            <button className="btn-caro-style right-[0] rounded-l-full" onClick={moveSlideRight} >
+                <VscChevronRight />
+            </button>
 
-                <article className='properties-container' ref={articleRef}>
-                    {propertyMap}
-                </article>
-
+            <div 
+                className='properties-container' 
+                ref={articleRef}
+            >
+                {propertyMap}
             </div>
+
         </section>
     )
 }

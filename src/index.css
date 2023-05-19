@@ -191,7 +191,7 @@
   }
   
   .property-card {
-    @apply w-[300px] h-[300px] text-white relative items-center justify-center
+    @apply min-w-[300px] h-[300px] text-white relative items-center justify-center
   }
   
   .properties-slider {
@@ -199,6 +199,6 @@
   }
   
   .properties-container {
-    @apply flex px-1 relative gap-12 scroll-smooth overflow-x-hidden
+    @apply flex items-center px-1 relative gap-12 scroll-smooth overflow-x-hidden
   }
 }
