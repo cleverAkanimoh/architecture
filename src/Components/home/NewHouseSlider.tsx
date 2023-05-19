@@ -7,16 +7,21 @@ export default function NewHouseSlider() {
 
     let properties = data
 
-    let articleRef = useRef<HTMLDivElement>(null)
+    let articleRef = useRef<HTMLDivElement >(null)
 
     let box = articleRef.current
+    
+    console.log(articleRef);
+    
 
     const moveSlideRight = () => {
 
         if (box != null) {
             let width = box.clientWidth
             box.scrollLeft = box.scrollLeft + width
+            console.log(width, box.scrollLeft)
         }
+        
     }
 
     const moveSlideLeft = () => {
