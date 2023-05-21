@@ -1,6 +1,7 @@
 import { Form } from "react-router-dom";
 import H3 from "./footer/H3";
 import { HomePlansLink } from "./home/HomePlansComp";
+import { companyName } from "../ts/companyInfo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -57,7 +58,7 @@ export default function Footer() {
 
       </section>
       <p className="lowercase text-center underline text-sm sm:text-base hover:text-white">
-        Copyright © {year} architecture.com
+        Copyright © {year} {companyName}.com
       </p>
     </footer>
   );

@@ -3,7 +3,6 @@ import useWindowTitle from "../hooks/useWindowTitle";
 
 import BoxContainer from "../Components/home/BoxContainer";
 
-import React from "react";
 import WelcomeComp from "../Components/home/WelcomeComp";
 import PlansComp from "../Components/home/PlansComp";
 import FreeHouseComp from "../Components/home/FreeHouseComp";
@@ -21,8 +20,8 @@ export default function Home() {
 
       <WelcomeComp
         className="pt-2 pb-6"
-        heading="welcome to architecture.com"
-        text="If you're looking to design your dream home but don't know where to begin, you're in the right place! At Architecture.com, we offer readymade house plans created by top floor plan designers. You can download one of our existing plans or place a *custom order with different specifications!"
+        heading="welcome to"
+        text="If you're looking to design your dream home but don't know where to begin, you're in the right place! At Rollands.com, we offer readymade house plans created by top floor plan designers. You can download one of our existing plans or place a *custom order with different specifications!"
       />
 
       <div className="cardsContainer">

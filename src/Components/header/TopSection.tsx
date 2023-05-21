@@ -2,6 +2,7 @@ import React from "react";
 import { BsMessenger, BsSearch, BsWhatsapp } from "react-icons/bs";
 import { Form, Link } from "react-router-dom";
 import { VscClose, VscHome } from "react-icons/vsc";
+import { companyName } from "../../ts/companyInfo";
 
 export default function TopSection() {
   const [toggleSearch, setToggleSearch] = React.useState(false);
@@ -14,7 +15,7 @@ export default function TopSection() {
         <Link to={"."} className="flex items-center">
           <VscHome className="text-[30px] sm:text-[50px] md:text-[60px] text-blue-300 mr-1" />
           <h4 className="topsection-logo">
-            <span className="architecture">architecture</span>
+            <span className="architecture">{companyName}</span>
             <span className="com">.com</span>
           </h4>
         </Link>
