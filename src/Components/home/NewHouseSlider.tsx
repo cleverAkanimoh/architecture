@@ -9,23 +9,23 @@ export default function NewHouseSlider() {
 
     let articleRef = useRef<HTMLDivElement | null>(null)
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     let timer = setInterval(() => {
-    //         let box = articleRef.current
+        let timer = setInterval(() => {
+            let box = articleRef.current
 
-    //         if (box != null) {
-    //             let width = box.clientWidth
-    //             if (box.scrollLeft > width) {
-    //                 moveSlideLeft()
-    //             } else {
-    //                 moveSlideRight()
-    //             }
-    //         }
-    //     }, 8000)
+            if (box != null) {
+                let width = box.clientWidth
+                if (box.scrollLeft > width * 2 && box.scrollLeft ) {
+                    moveSlideLeft()
+                } else {
+                    moveSlideRight()
+                }
+            }
+        }, 3000)
 
-    //     return () => clearInterval(timer)
-    // }, [])
+        return () => clearInterval(timer)
+    }, [])
 
     const moveSlideRight = () => {
 
