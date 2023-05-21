@@ -2,16 +2,20 @@ import { Form } from "react-router-dom";
 import H3 from "./footer/H3";
 import { HomePlansLink } from "./home/HomePlansComp";
 import { companyName } from "../ts/companyInfo";
+import { VscHome } from "react-icons/vsc";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="mt-14 pb-5 w-full capitalize flex flex-col items-center justify-center border-t-2 border-gray-dim">
-      <section className="p-3 my-14 m-w-[300px] w-[99%] max-w-[1300px] grid md:grid-cols-2 lg:grid-cols-3 xl:flex xl:justify-between gap-8 xl:items-start">
+      <section className="p-3 border my-14 m-w-[300px] w-[99%] max-w-[1300px] grid place-items-center xl:flex xl:justify-between gap-8 xl:items-start">
 
-        <div className="uppercase flex items-center bg-orange-400 rounded-lg w-2/3 max-w-[350px] h-[120px]">
-          <h1 className="h1 text-white animate-pulse">logo here</h1>
+        <div className="flex items-center border w-full sm2:col-span-3 max-w-[350px] h-full min-h-[150px] text-blue-400 font-extrabold">
+          <VscHome className="w-full h-32" />
+          <h1 className="text-5xl flex flex-col border">
+            <span>Rollands</span>
+            <span className="self-end lowercase mt-[-0.7rem] text-2xl">.com</span></h1>
         </div>
 
         <div className="my-3 max-w-[350px] w-full">
