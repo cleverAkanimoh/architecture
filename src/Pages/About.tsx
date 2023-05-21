@@ -13,7 +13,8 @@ export default function About() {
       <div className="py-2">
         <h1 className="about-h1-style">about us</h1>
       </div>
-      <div>
+
+      <div className="article-wrapper">
 
         <Article
           heading="WHO WE ARE"
@@ -37,7 +38,9 @@ export default function About() {
 
       </div>
 
-      <p>When you reach out to us through any channel all your inquiries will be attended to by our dedicated customer support team available from Monday to Friday 9.00am - 4.00pm GMT +3. Sometimes we work overtime because we love our clients So do not hesitate to reach out as our team will always respond when online.</p>
+      <div className="last-child">
+        <p>When you reach out to us through any channel all your inquiries will be attended to by our dedicated customer support team available from Monday to Friday 9.00am - 4.00pm GMT +3. Sometimes we work overtime because we love our clients So do not hesitate to reach out as our team will always respond when online.</p>
+      </div>
 
     </section>
   )

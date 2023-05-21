@@ -22,7 +22,7 @@ export default function NewHouseSlider() {
                     moveSlideRight()
                 }
             }
-        }, 3000)
+        }, 8000)
 
         return () => clearInterval(timer)
     }, [])
