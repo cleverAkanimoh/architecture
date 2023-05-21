@@ -1,10 +1,8 @@
 import H3 from './H3'
 import { HomePlansLink } from '../home/HomePlansComp'
 
-type Props = {}
-
-const Support = (props: Props) => (
-    <div className="max-w-[350px] w-full">
+const Support = () => (
+    <div className="max-w-[400px]">
         <H3 text="support" />
         <ul>
             <HomePlansLink

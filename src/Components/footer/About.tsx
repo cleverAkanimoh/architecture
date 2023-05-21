@@ -2,7 +2,7 @@ import H3 from './H3'
 import { HomePlansLink } from '../home/HomePlansComp'
 
 const About = () => (
-    <div className="max-w-[350px]">
+    <div className="max-w-[400px]">
         <H3 text="about company" />
         <ul>
             <HomePlansLink path="about" text="about us" border />

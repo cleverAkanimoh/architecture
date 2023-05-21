@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-14 pb-5 w-full capitalize flex flex-col items-center justify-center border-t-2 border-gray-dim">
-      <section className="p-3 my-14 m-w-[300px] w-[99%] max-w-[1300px] flex items-center flex-col xl:flex-row">
+      <section className="p-3 my-14 m-w-[300px] w-[99%] max-w-[1300px] flex flex-col xl:flex-row">
 
         <Logo />
 

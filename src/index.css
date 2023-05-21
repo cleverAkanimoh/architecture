@@ -226,10 +226,10 @@
   }
 
   .footer-info-style {
-    @apply w-full flex flex-col items-center sm2:flex-row gap-x-2 border;
+    @apply w-full flex flex-col sm2:flex-row sm2:gap-x-2 md:gap-x-6 lg:gap-x-10 xl:gap-x-8 xl:ml-8;
   }
   
   .footer-info-style div {
-    @apply w-full my-2 sm2:m-0 border;
+    @apply w-full my-3 self-center sm2:self-start sm2:m-0;
   }
 }

@@ -3,7 +3,7 @@ import { Form } from 'react-router-dom'
 import H3 from './H3'
 
 const Subscribe = () => (
-    <div className="lowercase my-5 w-full">
+    <div className="lowercase">
         <H3 text="subscribe to our newsletter!" />
         <Form action="#" className="my-4 flex md:flex-row flex-col">
             <input
