@@ -205,9 +205,9 @@
   .comp-desc-style {
     @apply bg-red-500 sm:bg-transparent bottom-0 grid grid-cols-3 p-1 pb-2 z-40 w-full sm:text-gray-light hover:text-blue-400;
   }
-  
+
   .comp-desc-style p {
-    @apply border border-t-0 border-l-0 ;
+    @apply border border-t-0 border-l-0;
   }
 
   .property-card p {
@@ -223,5 +223,13 @@
 
   .properties-container {
     @apply flex relative gap-x-12 scroll-smooth overflow-hidden;
+  }
+
+  .footer-info-style {
+    @apply w-full flex flex-col items-center sm2:flex-row gap-x-2 border;
+  }
+  
+  .footer-info-style div {
+    @apply w-full my-2 sm2:m-0 border;
   }
 }
