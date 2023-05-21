@@ -7,27 +7,27 @@ const NewHouseComp = ({ path, src, title, price, desc1, desc2, desc3, desc4, des
         className="property-card"
     >
         <Link className='hover:text-white text-[0.5rem]' to={`products/${path}`}>
-            <div className="w-full absolute top-0 left-0 hover:text-white z-40 bg-black bg-opacity-30 py-1">
+            <div className="comp-title-style">
                 <p>{title}</p>
             </div>
 
             <img
                 src={src}
                 alt={title}
-                className="w-full h-full hover:animate-pulse transition-transform duration-500 motion-reduce:transition-none"
+                className="comp-img-style"
             />
 
-            <div className="absolute rounded-l-full bottom-0 right-0 py-1 px-3 bg-gray-900 font-sans">
+            <div className="comp-price-style">
                 <p>{price}</p>
             </div>
 
-            <div className="bg-red-500 absolute bottom-0 grid grid-cols-3 p-1 z-40 w-full">
-                <p>{desc1}</p>
-                <p>{desc2}</p>
-                <p>{desc3}</p>
-                <p>{desc4}</p>
-                <p>{desc5}</p>
-                <p>{desc6}</p>
+            <div className="comp-desc-style">
+                <p className="">{desc1}</p>
+                <p className="">{desc2}</p>
+                <p className="border-r-transparent">{desc3}</p>
+                <p className="border-b-transparent">{desc4}</p>
+                <p className="border-b-transparent">{desc5}</p>
+                <p className="border-b-transparent border-r-transparent">{desc6}</p>
             </div>
         </Link>
     </div>
