@@ -9,32 +9,27 @@ export default function NewHouseSlider() {
 
     let articleRef = useRef<HTMLDivElement | null>(null)
 
-    let box = articleRef.current
-
-    console.log(articleRef);
-
-
     useEffect(() => {
-        console.log(articleRef);
-        if (box != null) {
-            let width = box.clientWidth
-            if (box.scrollLeft > width) {
-                box.scrollLeft = 0
-            } else {
-                box.scrollLeft = width
+
+        let timer = setInterval(() => {
+            let box = articleRef.current
+
+            if (box != null) {
+                let width = box.clientWidth
+                if (box.scrollLeft > width) {
+                    moveSlideLeft()
+                } else {
+                    moveSlideRight()
+                }
             }
-        }
-
-    }, [box])
-
-    useEffect(() => {
-        console.log(articleRef);
-        let timer = setInterval(() => moveSlideRight(), 8000)
+        }, 8000)
 
         return () => clearInterval(timer)
-    }, [box])
+    }, [])
 
     const moveSlideRight = () => {
+
+        let box = articleRef.current
 
         if (box != null) {
             let width = box.clientWidth
@@ -44,6 +39,8 @@ export default function NewHouseSlider() {
     }
 
     const moveSlideLeft = () => {
+
+        let box = articleRef.current
 
         if (box != null) {
             let width = box.clientWidth
