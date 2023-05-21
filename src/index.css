@@ -226,7 +226,7 @@
   }
 
   .footer-info-style {
-    @apply w-full flex flex-col sm2:flex-row sm2:gap-x-2 md:gap-x-6 lg:gap-x-10 xl:gap-x-8 xl:ml-8;
+    @apply w-full flex flex-col sm2:flex-row sm2:gap-x-2 md:gap-x-6 lg:gap-x-10 xl:gap-x-8 lg:ml-6;
   }
   
   .footer-info-style div {
