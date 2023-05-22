@@ -19,7 +19,7 @@ const Address = () => (
 
     <header className="header">
       <h1>
-        Let's build something <big>GREAT</big> today
+        Let's build something <big>GREAT</big> together!
       </h1>
       <p>
         Fill up the form and our Team will get back to you as soon as possible.

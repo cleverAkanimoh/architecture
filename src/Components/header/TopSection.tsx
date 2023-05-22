@@ -54,9 +54,10 @@ export default function TopSection() {
                 type="text"
                 className="rounded-l-sm outline-none px-2"
                 placeholder="search plans"
+                required
               />
 
-              <button className="px-2 rounded-none bg-gray-dark text-white">
+              <button type="submit" className="px-2 rounded-none bg-gray-dark text-white">
                 <BsSearch />
               </button>
             </Form>
