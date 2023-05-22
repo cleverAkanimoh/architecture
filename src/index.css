@@ -34,12 +34,12 @@
   #root {
     @apply w-full min-h-screen
     flex flex-col items-center
-    bg-gray-dark text-gray-light ;
+    bg-gray-dark text-gray-light;
   }
 
   main {
-    @apply w-screen sm:w-[430px] sm2:w-[450px]
-    flex flex-col items-center font-sans border;
+    @apply w-screen sm:w-[430px] sm2:w-[500px] md:w-[750px] lg:w-[850px] xl:w-[1200px]
+    flex flex-col items-center font-sans;
   }
 
   a {
@@ -65,10 +65,10 @@
   }
 
   .topsection-section {
-    @apply w-full max-w-[1190px] sm:w-[430px] sm2:w-[450px] md:w-[750px]
+    @apply w-full max-w-[1190px] sm:w-[430px] sm2:w-[500px] md:w-[750px] lg:w-[850px] xl:w-[1200px]
     py-1 px-[.85rem] sm:px-0
     text-white 
-    flex justify-between items-center border;
+    flex justify-between items-center;
   }
 
   .topsection-logo {
@@ -102,32 +102,36 @@
   }
 
   .nav-substyle {
-    @apply w-full max-w-[1170px] sm:w-[430px] sm2:w-[450px] md:w-[740px] lg:w-[85%] xl:w-[94%]
-    flex flex-col items-center justify-between md:flex-row-reverse border;
+    @apply w-full sm:w-[430px] sm2:w-[500px] md:w-[750px] lg:w-[850px] xl:w-[1200px]
+    flex flex-col items-center justify-between md:flex-row-reverse;
   }
 
   .nav-section-div-style {
-    @apply w-full md:w-fit flex items-center justify-between text-[.85rem] text-white;
+    @apply w-full md:w-fit 
+    flex items-center justify-between text-[.85rem] text-white;
   }
 
   .nav-link-div-btn {
-    @apply w-full flex items-center justify-between;
+    @apply w-full
+    flex items-center justify-between;
   }
 
   .nav-link-comp-container {
-    @apply w-full md:w-[400px] capitalize 
+    @apply w-full md:w-[400px]  
     md:flex items-center justify-between 
-    px-2 pt-1 pb-4 md:pb-1 md:px-0 text-[.85rem]
+    px-2 pt-1 pb-4 md:pb-1 md:px-0 
+    text-[.85rem] capitalize
     overflow-hidden md:overflow-visible
-    transition-all duration-300 border;
+    transition-all duration-300;
   }
 
   .navLink-style {
     @apply transition-all motion-reduce:transition-none duration-500 ease-out
     grid grid-cols-2 sm2:grid-cols-3 md:grid-cols-4 gap-2 
     bg-black md:bg-white md:text-gray-dark p-2
-    md:fixed my-1 md:w-[95vw] lg:w-[90vw] xl:w-[1160px] 
-    md:left-[-5.9%] xl:left-0 md:top-[75px] md:z-0 md:invisible 
+    md:fixed my-1 md:w-[740px] lg:w-[850px] xl:w-[1200px] 
+    md:left-[-6.55%] lg:left-[-12.55%] md:top-[75px] 
+    md:z-0 md:invisible 
     md:group-hover:top-[55px] md:group-hover:z-50 md:group-hover:visible md:opacity-0 md:group-hover:opacity-100;
   }
 
@@ -189,12 +193,14 @@
   .home-plans-style {
     @apply flex flex-col w-full my-6 py-16 px-3 border-t-2 bg-opacity-20 border-gray-dim text-white text-[1.05rem] bg-gray-dim hover:bg-black hover:bg-opacity-60;
   }
+  
   .res-caurosel {
-    @apply w-[85vw];
+    @apply w-full;
   }
 
   .slide-article-style {
-    @apply absolute top-0 left-0 w-full h-full  opacity-75 transition-transform duration-[800ms] ease-linear motion-reduce:transition-none invisible;
+    @apply absolute top-0 left-0 w-full h-full opacity-75 
+    transition-transform duration-[1000ms] ease-linear motion-reduce:transition-none invisible;
   }
 
   .nextSlide {
