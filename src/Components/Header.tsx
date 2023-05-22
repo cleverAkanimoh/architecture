@@ -16,6 +16,7 @@ export default function Header() {
       <nav className="nav-style">
         <div className="nav-substyle">
           <NavSection />
+          {/*  */}
 
           <div
             className={`${

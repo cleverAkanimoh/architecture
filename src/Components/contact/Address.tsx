@@ -1,41 +1,65 @@
-import { BsClockFill, BsEnvelopeFill, BsTelephoneFill } from "react-icons/bs"
-import { companyAddress, companyEmail, companyPhoneNumber } from "../../ts/companyInfo"
+import {
+  BsClock,
+  BsEnvelopeFill,
+  BsMessenger,
+  BsTelephoneFill,
+  BsWhatsapp,
+} from "react-icons/bs";
 
-type Props = {}
+import {
+  companyAddress,
+  companyEmail,
+  companyName,
+  companyOfficeHours,
+  companyPhoneNumber,
+} from "../../ts/companyInfo";
 
-const Address = (props: Props) => <div>
-  <div>
-    <h1>let's build something <big>BIG</big> today</h1>
-    <p>Fill up the form and our Team will get back to you as soon as possible.</p>
+const Address = () => (
+  <div className="address-div">
+
+    <header className="header">
+      <h1>
+        Let's build something <big>GREAT</big> today
+      </h1>
+      <p>
+        Fill up the form and our Team will get back to you as soon as possible.
+      </p>
+
+    </header>
+
+    <div className="information-div">
+
+      <a href={`tel:${companyPhoneNumber}`}><BsTelephoneFill className="inline" /> {companyPhoneNumber}</a>
+
+      <a href={`mailto:${companyEmail}`}><BsEnvelopeFill className="inline" /> {companyEmail}</a>
+
+      <span><BsClock className="inline" /> {companyOfficeHours}</span>
+    </div>
+
+    <div className="our-address">
+      <header className="header">
+        <h1 className="capitalize">our address:</h1>
+        <p>{companyAddress}</p>
+      </header>
+
+      <div>
+        <span className="text-white text-lg">You can also reach us through your favorite channel.</span>
+
+        <aside className="contact-aside">
+          <a
+            className="contact-social"
+            href={`https://api.whatsapp.com/send?phone=${companyPhoneNumber}`}
+          >
+            <BsWhatsapp />
+          </a>
+
+          <a className="contact-social" href={`http://m.me/${companyName}`}>
+            <BsMessenger />
+          </a>
+        </aside>
+      </div>
+    </div>
   </div>
+);
 
-  <div>
-
-    <div>
-      <BsTelephoneFill />
-      <a href={`tel:${companyPhoneNumber}`}>{companyPhoneNumber}</a>
-    </div>
-
-
-    <div>
-      <BsEnvelopeFill />
-      <a href={`mailto:${companyEmail}`}>{companyEmail}</a>
-    </div>
-
-
-    <div>
-      <BsClockFill />
-      <span>Office hours: Mon - Fri 9.00 am - 4.00 pm GMT +3</span>
-    </div>
-
-  </div>
-
-  <div>
-    <div>
-      <h1>our address:</h1>
-      <p>{companyAddress}</p>
-    </div>
-  </div>
-</div>
-
-export default Address
+export default Address;

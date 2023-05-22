@@ -7,7 +7,7 @@ import '../css/contact.css'
 export default function Contact() {
     useWindowTitle("Contact us | Rollands.com");
     return (
-        <section>
+        <section className="contact-section">
             <Address />
 
             <ContactForm />

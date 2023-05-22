@@ -3,6 +3,10 @@ export type NavLinkProps = {
   children: string;
 } & React.ComponentProps<"li">;
 
+export type ButtonType = {
+  text: string;
+} & React.ComponentProps<"button">;
+
 export type DropDownheadingProps = {
   text: string;
 };
