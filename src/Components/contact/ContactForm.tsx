@@ -88,7 +88,7 @@ const ContactForm = () => {
                 />
             </div>
 
-            <div>
+            <div className="span-2">
                 <legend>
                     Choose one below so we can direct your inquiry to the right team.
                 </legend>
@@ -126,7 +126,7 @@ const ContactForm = () => {
                 </aside>
             </div>
 
-            <div>
+            <div className="span-2">
                 <label htmlFor="message">Message</label>
                 <textarea
                     name="message"

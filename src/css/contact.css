@@ -4,8 +4,10 @@
 
 @layer components {
   .contact-section {
-    @apply min-h-screen w-[90%] my-8 p-3 rounded-md text-white bg-gray-dim bg-opacity-25 backdrop-blur z-10
-    md:grid grid-cols-2 gap-8 md:w-[92%]
+    @apply min-h-screen w-[90%] md:w-[92%] max-w-[1180px] 
+    my-8 p-3 rounded-md text-white
+    bg-gray-dim bg-opacity-25 backdrop-blur z-10
+    md:flex gap-8 relative;
   }
 
   /* -----
@@ -19,11 +21,11 @@
   }
 
   .address-div p {
-    @apply text-zinc-400 mb-4 md:mb-10;
+    @apply text-zinc-400 mb-4 md:mb-4;
   }
 
   .address-div .header h1 {
-    @apply text-xl sm:text-2xl md:text-3xl font-bold my-4 md:mb-8;
+    @apply text-xl sm:text-2xl md:text-3xl font-bold my-4;
   }
 
   big {
@@ -31,20 +33,26 @@
   }
 
   .information-div {
-    @apply w-full h-fit my-4 md:my-8 flex flex-col p-1 border border-gray-dim border-opacity-30 rounded;
+    @apply w-full h-fit my-4 md:my-8 
+    flex flex-col p-1 
+    border border-gray-dim border-opacity-30 rounded;
   }
 
   .information-div a,
   .information-div span {
-    @apply my-2 p-1 md:py-2 border-b border-gray-dim border-opacity-30;
+    @apply my-2 p-1 md:py-2 
+    border-b border-gray-dim border-opacity-30;
   }
 
   .contact-aside {
-    @apply w-24 h-14 my-2 pl-2 flex items-center justify-between;
+    @apply w-24 h-14 my-2 pl-2 
+    flex items-center justify-between;
   }
 
   .contact-social {
-    @apply text-xl text-black hover:text-black bg-white bg-opacity-50 hover:bg-opacity-90 p-2 rounded-full;
+    @apply text-xl text-black hover:text-black 
+    bg-white bg-opacity-50 hover:bg-opacity-90
+    p-2 rounded-full;
   }
 
   /* -----
@@ -54,11 +62,12 @@
   ------- */
 
   .custom-form {
-    @apply w-full;
+    @apply w-full
+    lg:grid lg:grid-cols-2 gap-6;
   }
 
   .custom-form div {
-    @apply flex flex-col my-4;
+    @apply flex flex-col mb-3 lg:mb-2;
   }
 
   .custom-form div label {
@@ -79,6 +88,12 @@
   }
 
   #message {
-    @apply w-full h-52 max-h-80 min-h-[150px] resize-y p-2 text-gray-dark outline-none border-2 border-gray-dim rounded;
+    @apply w-full h-32 max-h-52 min-h-[50px]
+    resize-y p-2 text-gray-dark outline-none 
+    border-2 border-gray-dim rounded;
+  }
+
+  .span-2 {
+    @apply col-span-2;
   }
 }
