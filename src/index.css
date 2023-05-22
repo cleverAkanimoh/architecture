@@ -62,7 +62,7 @@
   }
 
   .topsection-section {
-    @apply w-full py-1 px-[.85rem] text-white flex justify-between items-center max-w-[1220px];
+    @apply w-full py-1 px-[.85rem] text-white flex justify-between items-center max-w-[1190px];
   }
 
   .topsection-logo {
@@ -94,7 +94,7 @@
   }
 
   .nav-substyle {
-    @apply w-full sm:w-[90%] lg:w-[80%] xl:w-full flex flex-col items-center justify-between md:flex-row-reverse max-w-[1250px];
+    @apply w-full sm:w-[92%] lg:w-[85%] xl:w-[94%] flex flex-col items-center justify-between md:flex-row-reverse max-w-[1250px];
   }
 
   .nav-section-div-style {
@@ -106,11 +106,11 @@
   }
 
   .nav-link-comp-container {
-    @apply w-full md:w-[90%] capitalize md:flex items-center justify-between px-3 pt-1 pb-4 md:pb-1 overflow-hidden md:overflow-visible transition-all duration-300;
+    @apply w-full md:w-[95%] capitalize md:flex items-center justify-between px-2 pt-1 pb-4 md:pb-1 overflow-hidden md:overflow-visible transition-all duration-300;
   }
 
   .navLink-style {
-    @apply transition-all duration-500 grid grid-cols-2 sm2:grid-cols-3 md:grid-cols-4 gap-2 bg-black md:bg-white md:text-gray-dark p-2 md:fixed my-1 md:w-[95vw] lg:w-[90vw] md:left-[-50px] lg:left-[-80px] xl:left-[-20px] md:top-[75px] md:z-0 md:invisible md:group-hover:top-[55px] md:group-hover:z-50 md:group-hover:visible;
+    @apply transition-all duration-500 grid grid-cols-2 sm2:grid-cols-3 md:grid-cols-4 gap-2 bg-black md:bg-white md:text-gray-dark p-2 md:fixed my-1 md:w-[95vw] lg:w-[90vw] md:left-[-5.9%] xl:left-[4%] md:top-[75px] md:z-0 md:invisible md:group-hover:top-[55px] md:group-hover:z-50 md:group-hover:visible z-50;
   }
 
   header section h3 {
