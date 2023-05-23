@@ -22,7 +22,7 @@ export default function NewHouseSlider() {
                     moveSlideRight()
                 }
             }
-        }, 8000)
+        }, 10000)
 
 
 

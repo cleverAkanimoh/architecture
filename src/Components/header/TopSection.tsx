@@ -20,7 +20,7 @@ export default function TopSection() {
           </h4>
         </Link>
 
-        <div className="w-[180px] sm:w-[180px] md:w-[420px] flex items-center justify-between">
+        <div className="w-[180px] sm:w-[210px] md:w-[420px] flex items-center justify-between">
           <div className="topsection-div">
             <a
               href={`http://m.me/${companyName}`}

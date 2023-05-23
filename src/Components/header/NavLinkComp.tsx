@@ -1,4 +1,4 @@
-import { BsChevronUp } from "react-icons/bs";
+import { BsChevronUp, BsHouseExclamationFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { togglePlans } from "../../features/menu/menuSlice";
@@ -17,8 +17,10 @@ export default function NavLinkComp() {
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
           to={"."}
           end
+          className="flex items-center"
         >
-          home
+        <BsHouseExclamationFill className="inline text-base mr-1" />
+          <span>home</span>
         </NavLink>
       </div>
 
