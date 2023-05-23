@@ -6,7 +6,7 @@ const ImageArea = ({ to, src, title, ...rest }: ImageAreaProps) => (
     {...rest}
     className="res-caurosel h-[32vw] relative items-center justify-center overflow-hidden"
   >
-    <Link to={`products/${to}`}>
+    <Link to={`collections/${to}`}>
       <img
         src={src}
         alt={title}
