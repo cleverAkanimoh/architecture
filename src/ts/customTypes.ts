@@ -1,6 +1,6 @@
 export type NavLinkProps = {
   path: string;
-  children: string;
+  text: string;
 } & React.ComponentProps<"li">;
 
 export type ButtonType = {

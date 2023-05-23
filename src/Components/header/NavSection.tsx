@@ -25,18 +25,18 @@ export default function NavSection() {
         <div className="flex">
           <ul className="flex">
             <LiNavLinkComp
-              path={"login"}
-              children="login"
+              path={"auth/login"}
+              text="login"
               className="px-1"
             />
             <LiNavLinkComp
-              path={"register"}
-              children="register"
+              path={"auth/register"}
+              text="register"
               className="px-1"
             />
             <LiNavLinkComp
-              path={"favourites"}
-              children="favourites"
+              path={"plans/favourites"}
+              text="favourites"
               className="px-1"
             />
           </ul>

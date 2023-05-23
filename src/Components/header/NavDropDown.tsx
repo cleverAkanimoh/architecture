@@ -7,11 +7,11 @@ const NavDropDown = () => (
             <DropDownHeading text="sizes" />
 
             <ul>
-                <LiNavLinkComp path='1/bedroom' children="1 bedroom" />
-                <LiNavLinkComp path='2/bedroom' children="2 bedrooms" />
-                <LiNavLinkComp path='3/bedroom' children="3 bedrooms" />
-                <LiNavLinkComp path='4/bedroom' children="4 bedrooms" />
-                <LiNavLinkComp path='5/bedroom' children="5+ bedrooms" />
+                <LiNavLinkComp path='1/bedroom' text="1 bedroom" />
+                <LiNavLinkComp path='2/bedroom' text="2 bedrooms" />
+                <LiNavLinkComp path='3/bedroom' text="3 bedrooms" />
+                <LiNavLinkComp path='4/bedroom' text="4 bedrooms" />
+                <LiNavLinkComp path='5/bedroom' text="5+ bedrooms" />
             </ul>
         </section>
 
@@ -19,11 +19,11 @@ const NavDropDown = () => (
             <DropDownHeading text="styles" />
 
             <ul>
-                <LiNavLinkComp path='1/buildings' children="commercial buildings" />
-                <LiNavLinkComp path='2/buildings' children="apartments" />
-                <LiNavLinkComp path='3/buildings' children="Hotels and Lodges" />
-                <LiNavLinkComp path='4/buildings' children="Duplex Designs" />
-                <LiNavLinkComp path='5/buildings' children="Modern house plans" />
+                <LiNavLinkComp path='1/buildings' text="commercial buildings" />
+                <LiNavLinkComp path='2/buildings' text="apartments" />
+                <LiNavLinkComp path='3/buildings' text="Hotels and Lodges" />
+                <LiNavLinkComp path='4/buildings' text="Duplex Designs" />
+                <LiNavLinkComp path='5/buildings' text="Modern house plans" />
             </ul>
         </section>
 
@@ -31,11 +31,11 @@ const NavDropDown = () => (
             <DropDownHeading text="styles" />
 
             <ul>
-                <LiNavLinkComp path='1/houses' children="small house plans" />
-                <LiNavLinkComp path='2/houses' children="beach house plans" />
-                <LiNavLinkComp path='3/houses' children="contemporary house plans" />
-                <LiNavLinkComp path='4/houses' children="Mediterranean" />
-                <LiNavLinkComp path='5/houses' children="farm house plans" />
+                <LiNavLinkComp path='1/houses' text="small house plans" />
+                <LiNavLinkComp path='2/houses' text="beach house plans" />
+                <LiNavLinkComp path='3/houses' text="contemporary house plans" />
+                <LiNavLinkComp path='4/houses' text="Mediterranean" />
+                <LiNavLinkComp path='5/houses' text="farm house plans" />
             </ul>
         </section>
 
