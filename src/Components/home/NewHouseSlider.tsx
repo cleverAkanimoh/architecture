@@ -16,16 +16,13 @@ export default function NewHouseSlider() {
 
             if (box != null) {
                 let width = box.clientWidth
-                if (box.scrollLeft > width * 2) {
+                if (box.scrollLeft > width) {
                     box.scrollLeft = 0
                 } else {
                     moveSlideRight()
                 }
             }
         }, 10000)
-
-
-
 
         return () => clearInterval(timer)
     }, [])
@@ -38,7 +35,6 @@ export default function NewHouseSlider() {
             let width = box.clientWidth
             box.scrollLeft = box.scrollLeft + width
         }
-
     }
 
     const moveSlideLeft = () => {

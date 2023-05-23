@@ -19,7 +19,7 @@ export default function NavLinkComp() {
           end
           className="flex items-center"
         >
-        <BsHouseExclamationFill className="inline text-base mr-1" />
+        <BsHouseExclamationFill className="md:inline hidden text-xl mr-1" />
           <span>home</span>
         </NavLink>
       </div>

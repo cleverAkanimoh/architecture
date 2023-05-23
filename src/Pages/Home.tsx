@@ -9,9 +9,10 @@ import FreeHouseComp from "../Components/home/FreeHouseComp";
 import HomePlanContainer from "../Components/home/HomePlanContainer";
 import CustomCarousel from "../Components/home/CustomCarousel";
 import NewHouseSlider from "../Components/home/NewHouseSlider";
+import { companyName } from "../ts/companyInfo";
 
 export default function Home() {
-  useWindowTitle("Home | extra text goes here");
+  useWindowTitle(` Home | ${companyName} - unbeatable house plans`);
 
   return (
     <section className="general-flex">
