@@ -12,7 +12,7 @@ import NewHouseSlider from "../Components/home/NewHouseSlider";
 import { companyName } from "../ts/companyInfo";
 
 export default function Home() {
-  useWindowTitle(` Home | ${companyName} - unbeatable house plans`);
+  useWindowTitle(`Welcome to ${companyName}.com where we have unbeatable house plans`);
 
   return (
     <section className="general-flex">
